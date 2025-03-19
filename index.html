@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./icons/kohinoor-logo.ico">
+  <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2C3E50",
+            secondary: "#E67E22",
+          },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    .category-card:hover .category-overlay {
+      opacity: 1;
+    }
+
+    .product-card:hover .quick-view {
+      opacity: 1;
+    }
+
+    /* Hide the up/down arrows in number input fields */
+    .no-arrows::-webkit-outer-spin-button,
+    .no-arrows::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .no-arrows {
+      -moz-appearance: textfield;
+    }
+
+    .fade-out {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
+  </style>
+</head>
+
+<body class="bg-white min-h-screen">
+  <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-white z-[999]">
+    <img src="./icons/kohinoor-logo.png" alt="Logo" class="w-40 h-20 animate-pulse">
+  </div>
+  <header
+    class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg">
+    <nav class="w-full flex items-center justify-between px-6 py-4">
+      <!-- Logo -->
+      <a href="#" class="flex-shrink-0">
+        <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-28" />
+      </a>
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center space-x-8">
+        <li>
+          <a href="#home" class="text-white font-semibold hover:text-blue-400 transition">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="text-white font-semibold hover:text-blue-400 transition">About Us</a>
+        </li>
+        <li>
+          <a href="#products" class="text-white font-semibold hover:text-blue-400 transition">Products</a>
+        </li>
+        <li>
+          <a href="#catalogue" class="text-white font-semibold hover:text-blue-400 transition">Catalogue</a>
+        </li>
+        <!-- <li>
+          <a href="#services" class="text-white font-semibold hover:text-blue-400 transition">Services</a>
+        </li> -->
+        <li>
+          <a href="#review" class="text-white font-semibold hover:text-blue-400 transition">Review</a>
+        </li>
+      </ul>
+      <!-- Contact Button -->
+      <a href="tel:+919821339373"
+        class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Contact Us
+      </a>
+      <!-- Hamburger Menu Button -->
+      <button id="hamburger" class="md:hidden text-white text-2xl">
+        <i class="ri-menu-line"></i>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg">
+      <a href="#home" class="block hover:text-blue-400 transition">Home</a>
+      <a href="about.html" class="block hover:text-blue-400 transition">About Us</a>
+      <a href="#products" class="block hover:text-blue-400 transition">Products</a>
+      <a href="#catalogue" class="block hover:text-blue-400 transition">Catalogue</a>
+      <!-- <a href="#services" class="block hover:text-blue-400 transition">Services</a> -->
+      <a href="#review" class="block hover:text-blue-400 transition">Review</a>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="relative">
+      <!-- Background Slider -->
+      <div id="background-slider" class="splide absolute inset-0">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/home Page/home.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about1.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about2.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about3.jpeg');"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 h-[600px] bg-gradient-to-r from-primary/80 to-transparent">
+      </div>
+
+      <!-- Content -->
+      <div class="container mx-auto px-6 h-[600px] flex items-center relative">
+        <div class="max-w-xl text-white">
+          <h1 class="text-5xl md:text-4xl sm:text-3xl font-bold mb-6">
+            Transform Your Windows into Masterpieces
+          </h1>
+          <p class="text-xl md:text-lg sm:text-base mb-8">
+            Discover our premium collection of curtain accessories that blend style
+            with functionality. Elevate your home décor with our carefully curated
+            selection.
+          </p>
+          <a class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-lg text-lg md:text-base font-medium whitespace-nowrap"
+            href="Tracks.html">
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
+            <img src="./images/tracks.webp" alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track"
+              class="w-full h-64 object-contain" />
+            <div
+              class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+              <div class="text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">Imp High Grade Aluminium Tracks</h3>
+                <p class="mb-4">30+ Styles Available</p>
+                <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  href="Tracks.html">
+                  View Collection
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
+            <img src="./images/TIE BACK/TIE BACK 3.webp" alt="Tie Back 3" class="w-full h-64 object-conatin" />
+            <div
+              class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+              <div class="text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">Imp Tie Back</h3>
+                <p class="mb-4">25+ Styles Available</p>
+                <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  href="TieBack.html">
+                  View Collection
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
+            <img src="./images/Pipes/round/round1.webp" alt="Pipes" class="w-full h-64 object-conatin" />
+            <div
+              class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+              <div class="text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">Imp Steel Pipes and Rods</h3>
+                <p class="mb-4">40+ Styles Available</p>
+                <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  href="Pipes.html">
+                  View Collection
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
+            <img src="./images/Tassels/Tassels30.webp" alt="Tassels" class="w-full h-64 object-conatin" />
+            <div
+              class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+              <div class="text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">Imp Tassels</h3>
+                <p class="mb-4">30+ Styles Available</p>
+                <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  href="Tassels.html">
+                  View Collection
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
+            <img src="./images/Curtain Accessory/Track Elbow.webp" alt="Celling Bracket Track"
+              class="w-full h-64 object-contain" />
+            <div
+              class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+              <div class="text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">Imp Curtain Accessory</h3>
+                <p class="mb-4">25+ Styles Available</p>
+                <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  href="CurtainAccessory.html">
+                  View Collection
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
+            <img src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg" alt="Finials"
+              class="w-full h-64 object-cover" />
+            <div
+              class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+              <div class="text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">Imp Finials</h3>
+                <p class="mb-4">40+ Styles Available</p>
+                <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  href="Finials.html">
+                  View Collection
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp High Grade Aluminium Tracks</h2>
+          <a href="Tracks.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide h-fit" id="Tracks">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp M. Track Ivory Electro Coating/Imp M. Track Ivory Electro Coating.webp"
+                      alt="Imp M. Track Ivory Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-m-track-ivory-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp M. Aluminum Track Ivory Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp M. Track Antique Electro Coating/Imp M. Track Antique Electro Coating.webp"
+                      alt="Imp M. Track Antique Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-m-track-antique-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp M. Aluminum Track Antique Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1001 Track Ivory Electro Coating/Imp 1001 Track Ivory Electro Coating.webp"
+                      alt="Imp 1001 Track Ivory Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1001-track-ivory-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1001 Aluminum Track Ivory Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1001 Track Antique Electro Coating/Imp 1001 Track Antique Electro Coating.webp"
+                      alt="Imp 1001 Track Antique Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1001-track-antique-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1001 Aluminum Track Antique Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1003 Flexible Track Ivory Electro Coating Hospital Track/Imp 1003 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                      alt="Imp 1003 Flexible Track Ivory Electro Coating Hospital Track"
+                      class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1003-flexible-track-ivory-electro-coating-hospital-track.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1003 Aluminum Flexible Track Ivory Electro Coating Hospital
+                      Track
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                      alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track"
+                      class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1004-flexible-track-ivory-electro-coating-hospital-track.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1004 Aluminum Flexible Track Ivory Electro Coating Hospital
+                      Track
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1005 Flexible Track Ivory Electro Coating Hospital Track/Imp 1005 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                      alt="Imp 1005 Flexible Track Ivory Electro Coating Hospital Track"
+                      class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1005-flexible-track-ivory-electro-coating-hospital-track.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1005 Aluminum Flexible Track Ivory Electro Coating Hospital
+                      Track
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1006 Track White Electro Coating/Imp 1006 Track White Electro Coating.webp"
+                      alt="Imp 1006 Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1006-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1006 Aluminum Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1007 Rop Track White Electro Coating/Imp 1007 Rop Track White Electro Coating.webp"
+                      alt="Imp 1007 Rop Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1007-rope-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1007 Aluminum Rop Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1008 Track White Electro Coating/Imp 1008 Track White Electro Coating.webp"
+                      alt="Imp 1008 Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1008-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1008 Aluminum Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1009 PVC Electro Coating White/Imp 1009 PVC Electro Coating White.webp"
+                      alt="Imp 1009 PVC Electro Coating White" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1009-pvc-electro-coating-white.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1009 Aluminum PVC Electro Coating White
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1010 Track Ivory Electro Coating/Imp 1010 Track Ivory Electro Coating.webp"
+                      alt="Imp 1010 Track Ivory Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1010-track-ivory-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1010 Aluminum Track Ivory Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1011 Track Ivory Electro Coating/Imp 1011 Track Ivory Electro Coating.webp"
+                      alt="Imp 1011 Track Ivory Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1011-track-ivory-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1011 Aluminum Track Ivory Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1012 PVC Electro Coating White/Imp 1012 PVC Electro Coating White.webp"
+                      alt="Imp 1012 PVC Electro Coating White" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1012-pvc-electro-coating-white.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1012 Aluminum PVC Electro Coating White
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1013 PVC Electro Coating White/Imp 1013 PVC Electro Coating White.webp"
+                      alt="Imp 1013 PVC Electro Coating White" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1013-pvc-electro-coating-white.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1013 Aluminum PVC Electro Coating White
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1014 Electro Plating Rose Gold/Imp 1014 Electro Plating Rose Gold.webp"
+                      alt="Imp 1014 Electro Plating Rose Gold" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1014-electro-plating-rose-gold.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1014 Aluminum Electro Plating Rose Gold
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp 1015 Roman Track White Electro Coating/Imp 1015 Roman Track White Electro Coating.webp"
+                      alt="Imp 1015 Roman Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-1015-roman-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp 1015 Aluminum Roman Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp Venus Roman Track White Without Voice Electro Coating/Imp Venus Roman Track White Without Voice Electro Coating.webp"
+                      alt="Imp Venus Roman Track White Without Voice Electro Coating"
+                      class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-venus-roman-track-white-without-voice-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp Venus Roman Aluminum Track White Without Voice Electro
+                      Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp Three Way Manual Track White Electro Coating/Imp Three Way Manual Track White Electro Coating.webp"
+                      alt="Imp Three Way Manual Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-three-way-manual-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp Three Way Aluminum Manual Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp Three Way Rope Track White Electro Coating/Imp Three Way Rope Track White Electro Coating.webp"
+                      alt="Imp Three Way Rope Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-three-way-rope-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp Three Way Aluminum Rope Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp Four Way Manual Track White Electro Coating/Imp Four Way Manual Track White Electro Coating.webp"
+                      alt="Imp Four Way Manual Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-four-way-manual-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp Four Way Aluminum Manual Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img
+                      src="./images/Tracks/Imp Four Way Rope Track White Electro Coating/Imp Four Way Rope Track White Electro Coating.webp"
+                      alt="Imp Four Way Rope Track White Electro Coating" class="w-full h-60 object-contain" />
+                    <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      href="./Tracks/imp-four-way-rope-track-white-electro-coating.html">
+                      Quick View
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">
+                      Imp Four Way Aluminum Rope Track White Electro Coating
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp TIE BACK</h2>
+          <a href="TieBack.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide" id="TieBack">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 0.webp" alt="TIE BACK 0" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 1</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 1.webp" alt="TIE BACK 1" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 2</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 2.webp" alt="TIE BACK 2" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 3</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 3.webp" alt="TIE BACK 3" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 4</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 4.webp" alt="TIE BACK 4" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 5</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 5.webp" alt="TIE BACK 5" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 6</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 6.webp" alt="TIE BACK 6" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 7</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 7.webp" alt="TIE BACK 7" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 8</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 8.webp" alt="TIE BACK 8" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 9</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 9.webp" alt="TIE BACK 9" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 10</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 10.webp" alt="TIE BACK 10"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 11</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/TIE BACK/TIE BACK 11.webp" alt="TIE BACK 11"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp TIE BACK 12</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp Steel Pipes and Rods</h2>
+          <a href="Pipes.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide" id="Pipes">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- Product 1 -->
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/oval/oval.webp" alt="Oval" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Oval</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/rectangular/rectangular.webp" alt="Rectangle"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Rectangle</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/round/round.webp" alt="Round" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Round</h3>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/oval/oval1.webp" alt="Oval1" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Oval</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/rectangular/rectangular1.webp" alt="Rectangle1"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Rectangle</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/round/round1.webp" alt="Round1" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Round</h3>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/oval/oval2.webp" alt="Oval2" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Oval</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/rectangular/rectangular2.webp" alt="Rectangle2"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Rectangle</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Pipes/round/round2.webp" alt="Round2" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Round</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp Tassels</h2>
+          <a href="Tassels.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide" id="Tassels">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels0.webp" alt="Tassels0" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 1</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels1.webp" alt="Tassels1" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 2</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels2.webp" alt="Tassels2" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 3</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels3.webp" alt="Tassels3" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 4</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels4.webp" alt="Tassels4" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 5</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels5.webp" alt="Tassels5" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 6</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels6.webp" alt="Tassels6" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 7</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels7.webp" alt="Tassels7" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 8</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels8.webp" alt="Tassels8" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 9</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels9.webp" alt="Tassels9" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 10</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels10.webp" alt="Tassels10" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 11</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels11.webp" alt="Tassels11" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 12</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels12.webp" alt="Tassels12" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 13</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels13.webp" alt="Tassels13" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 14</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels14.webp" alt="Tassels14" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 15</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels15.webp" alt="Tassels15" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 16</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels16.webp" alt="Tassels16" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 17</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels17.webp" alt="Tassels17" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 18</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels18.webp" alt="Tassels18" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 19</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels19.webp" alt="Tassels19" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 20</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels20.webp" alt="Tassels20" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 21</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels21.webp" alt="Tassels21" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 22</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels22.webp" alt="Tassels22" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 23</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels23.webp" alt="Tassels23" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 24</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels24.webp" alt="Tassels24" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 25</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels25.webp" alt="Tassels25" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 26</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels26.webp" alt="Tassels26" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 27</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels27.webp" alt="Tassels27" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 28</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels28.webp" alt="Tassels28" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 29</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels29.webp" alt="Tassels29" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 30</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels30.webp" alt="Tassels30" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 31</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Tassels/Tassels31.webp" alt="Tassels31" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Tassels 32</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp Finials</h2>
+          <a href="Finials.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide" id="Finials">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials1.webp" alt="Finials 1" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 1</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials2.webp" alt="Finials 2" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 2</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials3.webp" alt="Finials 3" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 3</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials4.webp" alt="Finials 4" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 4</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials5.webp" alt="Finials 5" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 5</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials6.webp" alt="Finials 6" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 6</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials7.webp" alt="Finials 7" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 7</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials8.webp" alt="Finials 8" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 8</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials9.webp" alt="Finials 9" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 9</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials10.webp" alt="Finials 10" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 10</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials11.webp" alt="Finials 11" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 11</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials12.webp" alt="Finials 12" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 12</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials13.webp" alt="Finials 13" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 13</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials14.webp" alt="Finials 14" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 14</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials15.webp" alt="Finials 15" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 15</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials16.webp" alt="Finials 16" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 16</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials17.webp" alt="Finials 17" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 17</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Finials/Finials18.webp" alt="Finials 18" class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Finials 18</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp Curtain Accessory</h2>
+          <a href="CurtainAccessory.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide" id="CurtainAccessory">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/American Curtain Patti.webp" alt="American Curtain Patti"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp American Curtain Patti</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Bakram Patta.webp" alt="Bakram Patta"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Bakram Patta</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Curtain Hook Brass.webp" alt="Curtain Hook Brass"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Curtain Hook Brass</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Ripple Fold.webp" alt="Ripple Fold"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Ripple Fold</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/track cap.webp" alt="track cap"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp track cap</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Track Hook.webp" alt="Track Hook"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Track Hook</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Track Lock.webp" alt="Track Lock"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Track Lock</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/track Wall Bracket.webp" alt="track Wall Bracket"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp track Wall Bracket</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Arebian Tape.webp" alt="Arebian Tape"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Arebian Tape</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Celling Bracket Track.webp" alt="Celling Bracket Track"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Celling Bracket Track</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Eyelet Ring.webp" alt="Eyelet Ring"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Eyelet Ring</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/track Bracket.webp" alt="track Bracket"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp track Bracket</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Track Elbow.webp" alt="Track Elbow"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Track Elbow</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Track Jointer.webp" alt="Track Jointer"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Track Jointer</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Track Runner.webp" alt="Track Runner"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Track Runner</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogue" class="text-white py-10">
+      <div class="container mx-auto px-4 text-center">
+        <a href="./pdf/Kohinoor Catalogue 2020-2021.pdf" download="Kohinoor Catalogue 2020-2021.pdf"
+          class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">
+          <i class="ri-download-line"></i>
+          Download Catalogue
+        </a>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Trending Products</h2>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
+          <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
+            <div class="absolute top-5 left-5 w-3/5">
+              <h2 class="text-xl font-semibold text-gray-800">Imp High Grade Aluminium Tracks</h2>
+              <p class="text-gray-700 text-sm">
+                Imp High Grade Aluminium Tracks provide smooth, effortless curtain movement with a sleek,
+                modern design. Made from durable materials, they ensure seamless
+                operation and a neat, polished look.
+              </p>
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/5">
+              <img src="./images/Tracks/Imp 1012 PVC Electro Coating White/Imp 1012 PVC Electro Coating White.webp"
+                alt="Imp 1012 PVC Electro Coating White" class="max-w-40 mix-blend-multiply" />
+            </div>
+          </div>
+          <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
+            <div class="absolute top-5 left-5 w-3/5">
+              <h2 class="text-xl font-semibold text-gray-800">Imp Tie Back</h2>
+              <p class="text-gray-700 text-sm">
+                A Imp Tie Back in curtains is a type of hook or tieback used to hold
+                curtains in place, allowing light to enter while adding a
+                decorative touch.
+              </p>
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/5">
+              <img src="./images/TIE BACK/TIE BACK 2.webp" alt="TIE BACK" class="max-w-40 mix-blend-multiply" />
+            </div>
+          </div>
+          <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
+            <div class="absolute top-5 left-5 w-3/5">
+              <h2 class="text-xl font-semibold text-gray-800">Imp Steel Pipes and Rods</h2>
+              <p class="text-gray-700 text-sm">
+                Imp Curtain pipes and rods provide sturdy support for hanging
+                curtains, enhancing both functionality and aesthetic appeal in
+                window treatments.
+              </p>
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/5">
+              <img src="./images/Pipes/oval/oval2.webp" alt="Pipes and Rods" class="max-w-40 mix-blend-multiply" />
+            </div>
+          </div>
+          <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
+            <div class="absolute top-5 left-5 w-3/5">
+              <h2 class="text-xl font-semibold text-gray-800">Imp Tassels</h2>
+              <p class="text-gray-700 text-sm">
+                Imp Tassels are decorative textile ornaments made from threads, yarns,
+                or cords, commonly used in home décor, apparel, and accessories.
+                They add elegance and charm to curtains, cushions, clothing, and
+                handbags.
+              </p>
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/5">
+              <img src="./images/Tassels/Tassels18.webp" alt="Tassels" class="max-w-40 mix-blend-multiply" />
+            </div>
+          </div>
+          <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
+            <div class="absolute top-5 left-5 w-3/5">
+              <h2 class="text-xl font-semibold text-gray-800">
+                Imp Curtain Accessory
+              </h2>
+              <p class="text-gray-700 text-sm">
+                Imp Curtain accessories include tiebacks, hooks, rings, rods, finials,
+                and holdbacks, enhancing both the functionality and aesthetic
+                appeal of curtains.
+              </p>
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/5">
+              <img src="./images/Curtain Accessory/Track Hook.webp" alt="Track Hook"
+                class="max-w-40 mix-blend-multiply" />
+            </div>
+          </div>
+          <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
+            <div class="absolute top-5 left-5 w-3/5">
+              <h2 class="text-xl font-semibold text-gray-800">Imp Finials</h2>
+              <p class="text-gray-700 text-sm">
+                Imp Finials are decorative end caps for curtain rods, adding a stylish
+                touch while preventing curtains from sliding off the rod.
+              </p>
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/5">
+              <img src="./images/Finials/Finials11.webp" alt="Finials" class="max-w-40 mix-blend-multiply" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+    <section id="services" class="bg-primary text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <i class="ri-truck-line text-3xl"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">Fast Shipping</h3>
+              <p class="text-sm opacity-80">On any order</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <i class="ri-shield-check-line text-3xl"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">2 Year Warranty</h3>
+              <p class="text-sm opacity-80">100% guarantee</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <i class="ri-customer-service-2-line text-3xl"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">24/7 Support</h3>
+              <p class="text-sm opacity-80">Dedicated support</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <i class="ri-secure-payment-line text-3xl"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">Secure Payment</h3>
+              <p class="text-sm opacity-80">100% secure payment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <i class="ri-award-line text-4xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Premium Quality</h3>
+            <p class="text-gray-600">
+              Our products are crafted from the finest materials to ensure
+              lasting beauty and durability.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <i class="ri-palette-line text-4xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Extensive Selection</h3>
+            <p class="text-gray-600">
+              Choose from over 200 unique designs to perfectly match your
+              home's style.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <i class="ri-tools-line text-4xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Easy Installation</h3>
+            <p class="text-gray-600">
+              Our products come with detailed instructions and all necessary
+              hardware for hassle-free setup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-5xl mx-auto p-6 my-16 bg-white rounded-2xl shadow-lg mt-10">
+      <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+        <p class="text-gray-600 mt-2">We'd love to hear from you! Send us a message below.</p>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700 font-medium">Name</label>
+          <input type="text" placeholder="Your Name"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Mobile No.</label>
+          <input type="number" placeholder="Your Mobile No." min="1000000000" max="9999999999"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none no-arrows">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Email</label>
+          <input type="email" placeholder="Your Email"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea rows="4" placeholder="Your Message"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+    </section>
+    <section id="review" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          What Our Customers Say
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex text-yellow-400 mb-4">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Excellent quality curtain rods! The installation was
+              straightforward, and they look absolutely stunning. Highly
+              recommend!"
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div>
+                <h4 class="font-semibold">Aakash</h4>
+                <p class="text-sm text-gray-500">Interior Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex text-yellow-400 mb-4">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "The crystal finials I ordered are beautiful and add such
+              elegance to my living room. Great customer service too!"
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div>
+                <h4 class="font-semibold">Vikas</h4>
+                <p class="text-sm text-gray-500">Home Owner</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex text-yellow-400 mb-4">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Fast shipping and the brackets are very sturdy. Perfect for my
+              heavy curtains. Will definitely order again!"
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div>
+                <h4 class="font-semibold">Sara</h4>
+                <p class="text-sm text-gray-500">Decorator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-6">Get Expert Advice</h2>
+              <p class="text-gray-600 mb-8">
+                Subscribe to our newsletter for the latest trends, tips, and
+                exclusive offers.
+              </p>
+              <form class="flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email"
+                  class="w-full sm:flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50" />
+                <button type="submit"
+                  class="bg-primary text-white w-full sm:w-auto px-6 py-3 rounded-lg whitespace-nowrap hover:bg-primary/90 transition-colors">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <div class="hidden md:block">
+              <img src="https://public.readdy.ai/ai/img_res/5e6553774e8efe53b3e934cc4a0897e2.jpg" alt="Expert Advice"
+                class="w-full rounded-lg object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <a href="#" class="flex-shrink-0 items-center justify-center">
+            <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-40" />
+          </a>
+          <p class="text-gray-400 mb-6">
+            Transform your windows with our premium curtain accessories.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+              <i class="ri-pinterest-line"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="#home" class="text-gray-400 hover:text-white">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-gray-400 hover:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="tel:+919821339373" class="text-gray-400 hover:text-white">Contact</a>
+            </li>
+            <li>
+              <a href="#catalogue" class="text-gray-400 hover:text-white">Catalogue</a>
+            </li>
+            <!-- <li>
+              <a href="#services" class="text-gray-400 hover:text-white">Services</a>
+            </li> -->
+            <li>
+              <a href="#review" class="text-gray-400 hover:text-white">Review</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Products</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="Tracks.html" class="text-gray-400 hover:text-white">Imp High Grade Aluminium Tracks</a>
+            </li>
+            <li>
+              <a href="Finials.html" class="text-gray-400 hover:text-white">Imp Finials</a>
+            </li>
+            <li>
+              <a href="Tassels.html" class="text-gray-400 hover:text-white">Imp Tassels</a>
+            </li>
+            <li>
+              <a href="Pipes.html" class="text-gray-400 hover:text-white">Imp Steel Pipes and Rods</a>
+            </li>
+            <li>
+              <a href="CurtainAccessory.html" class="text-gray-400 hover:text-white">Imp Curtain Accessory</a>
+            </li>
+            <li>
+              <a href="TieBack.html" class="text-gray-400 hover:text-white">Imp Tie Backs</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center text-gray-400">
+              <i class="ri-map-pin-line mr-3"></i>
+              <span>1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan, Chincholi
+                Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
+                India.</span>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="ri-phone-line mr-3"></i>
+              <span>+91 98213 39373</span>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="ri-time-line mr-3"></i>
+              <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="ri-mail-line mr-3"></i>
+              <span>support@kohinoor.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="flex flex-wrap justify-between items-center">
+          <p class="text-gray-400">
+            &copy; 2025 Kohinoor All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating contact buttons -->
+  <a href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Curtain%20Accessories%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
+    class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+    target="_blank">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <a href="tel:+919821339373"
+    class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200">
+    <i class="ri-phone-line"></i>
+  </a>
+  <script>
+    // Hide loader and show content after a delay
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      const mainContent = document.getElementById("main-content");
+
+      setTimeout(() => {
+        preloader.classList.add("fade-out");
+
+        setTimeout(() => {
+          preloader.style.display = "none";
+          mainContent.classList.remove("hidden");
+        }, 500); // Fade-out transition time
+      }, 2000); // Loader visible for 3 seconds
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all links with hash
+      const links = document.querySelectorAll('a[href^="#"]');
+
+      // Add smooth scroll to all links
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          // Prevent default anchor click behavior
+          e.preventDefault();
+
+          // Get the target element
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            // Calculate header height to offset the scroll position
+            const headerHeight =
+              document.querySelector("header").offsetHeight + 16;
+
+            // Get position of the target
+            const targetPosition =
+              targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+            // Scroll smoothly to target with header offset
+            window.scrollTo({
+              top: targetPosition - headerHeight,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide("#Tracks", {
+        type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#TieBack", {
+        type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#Pipes", {
+        type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#Tassels", {
+        type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#Finials", {
+        type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#CurtainAccessory", {
+        type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#background-slider", {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        arrows: false,
+        pagination: false,
+      }).mount();
+
+      // Optional: Add hover effect for quick view buttons
+      document.querySelectorAll(".product-card").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.querySelector(".quick-view").style.opacity = "1";
+        });
+        card.addEventListener("mouseleave", () => {
+          card.querySelector(".quick-view").style.opacity = "0";
+        });
+      });
+    });
+
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuItems = mobileMenu.querySelectorAll("a"); // Select all menu links
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+</body>
+
+</html>
