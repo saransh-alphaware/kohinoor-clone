@@ -74,7 +74,8 @@
 </head>
 
 <body class="bg-white min-h-screen">
-  <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-white z-[999]">
+  <div id="preloader" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-[999]">
+    <p class="text-2xl font-bold mb-4 animate-pulse text-[#BC8749]">Welcome To</p>
     <img src="./icons/kohinoor-logo.png" alt="Logo" class="w-40 h-20 animate-pulse">
   </div>
   <header
@@ -98,9 +99,6 @@
         <li>
           <a href="#catalogue" class="text-white font-semibold hover:text-blue-400 transition">Catalogue</a>
         </li>
-        <!-- <li>
-          <a href="#services" class="text-white font-semibold hover:text-blue-400 transition">Services</a>
-        </li> -->
         <li>
           <a href="#review" class="text-white font-semibold hover:text-blue-400 transition">Review</a>
         </li>
@@ -174,7 +172,7 @@
         <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="category-card relative rounded-lg overflow-hidden shadow-lg group">
-            <img src="./images/tracks.webp" alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track"
+            <img src="./images/Tracks/Imp M. Track Ivory Electro Coating/Imp M. Track Ivory Electro Coating.webp" alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track"
               class="w-full h-64 object-contain" />
             <div
               class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
@@ -690,7 +688,38 @@
         </div>
       </div>
     </section>
-
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold">Imp Curtain Wi-Fi Motor</h2>
+          <a href="CurtainAccessory.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        <div class="splide" id="Motor">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide py-2">
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+                  <div class="relative">
+                    <img src="./images/Curtain Accessory/Arabian 1.webp" alt="Arabian 1"
+                      class="w-full h-60 object-contain" />
+                    <button
+                      class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-medium">Imp Kohinoor Curtain Wi-Fi Motor KC72 TV/W 1.2/14 Heavy Duty</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center mb-8">
@@ -2482,6 +2511,26 @@
     document.addEventListener("DOMContentLoaded", function () {
       new Splide("#Tracks", {
         type: "loop",
+        perPage: 4,
+        gap: "1rem",
+        arrows: false,
+        pagination: false,
+        pauseOnHover: true, // Optional: pause autoplay on hover
+        breakpoints: {
+          1024: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      new Splide("#Motor", {
+        // type: "loop",
         perPage: 4,
         gap: "1rem",
         arrows: false,
