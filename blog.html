@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/kohinoor-logo.ico">
+    <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2C3E50",
+                        secondary: "#E67E22",
+                        backColor: '#d0d2d6',
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white min-h-screen">
+    <header
+        class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg">
+        <nav class="w-full flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <a href="index.html" class="flex-shrink-0">
+                <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-28" />
+            </a>
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li>
+                    <a href="index.html" class="text-white font-semibold hover:text-blue-400 transition">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="text-white font-semibold hover:text-blue-400 transition">About Us</a>
+                </li>
+                <li>
+                    <a href="index.html#products"
+                        class="text-white font-semibold hover:text-blue-400 transition">Products</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="text-blue-400 font-semibold transition">Blog</a>
+                </li>
+                <li>
+                    <a href="index.html#review"
+                        class="text-white font-semibold hover:text-blue-400 transition">Review</a>
+                </li>
+            </ul>
+            <!-- Contact Button -->
+            <a href="tel:+919821339373"
+                class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+                Contact Us
+            </a>
+            <!-- Hamburger Menu Button -->
+            <button id="hamburger" class="md:hidden text-white text-2xl">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg">
+            <a href="index.html" class="block hover:text-blue-400 transition">Home</a>
+            <a href="about.html" class="block hover:text-blue-400 transition">About Us</a>
+            <a href="index.html#products" class="block hover:text-blue-400 transition">Products</a>
+            <a href="blog.html" class="block text-blue-400 transition">Blog</a>
+            <a href="index.html#review" class="block hover:text-blue-400 transition">Review</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-primary to-primary/80 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Kohinoor Blog
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Discover expert tips, trends, and inspiration for beautiful curtain accessories and home decor
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Featured Article</h2>
+                <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./images/home Page/home1.jpg" alt="Featured Article"
+                        class="w-full h-64 md:h-80 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <span
+                                class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                            <span class="text-gray-500 ml-4">December 15, 2024</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                            10 Ways to Transform Your Living Space with Premium Curtain Tracks
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Discover how the right curtain tracks can completely transform your living space. From sleek
+                            aluminum tracks
+                            to motorized options, learn about the latest innovations that combine functionality with
+                            style...
+                        </p>
+                        <a href="#"
+                            class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Browse by Category</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                        <div
+                            class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-secondary/10 rounded-full">
+                            <i class="ri-home-4-line text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Home Decor Tips</h3>
+                        <p class="text-gray-600 mb-4">Latest trends and expert advice for beautiful home decor</p>
+                        <a href="#" class="text-secondary font-medium hover:underline">View Articles</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                        <div
+                            class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-secondary/10 rounded-full">
+                            <i class="ri-tools-line text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Installation Guides</h3>
+                        <p class="text-gray-600 mb-4">Step-by-step tutorials for curtain accessories installation</p>
+                        <a href="#" class="text-secondary font-medium hover:underline">View Guides</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                        <div
+                            class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-secondary/10 rounded-full">
+                            <i class="ri-lightbulb-line text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Product Spotlights</h3>
+                        <p class="text-gray-600 mb-4">Featured products and their unique benefits</p>
+                        <a href="#" class="text-secondary font-medium hover:underline">Explore Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Blog Posts -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-3xl font-bold">Latest Articles</h2>
+                    <div class="flex space-x-4">
+                        <button class="bg-white px-4 py-2 rounded-lg shadow hover:shadow-md transition">All</button>
+                        <button class="px-4 py-2 rounded-lg hover:bg-white hover:shadow-md transition">Tips</button>
+                        <button class="px-4 py-2 rounded-lg hover:bg-white hover:shadow-md transition">Guides</button>
+                        <button class="px-4 py-2 rounded-lg hover:bg-white hover:shadow-md transition">Products</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="./images/Tracks/Imp M. Track Ivory Electro Coating/Imp M. Track Ivory Electro Coating.webp"
+                            alt="Aluminum Tracks" class="w-full h-48 object-contain bg-backColor">
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Installation
+                                    Guide</span>
+                                <span class="text-gray-500 ml-3 text-sm">Dec 10, 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">How to Install Aluminum Curtain Tracks Like a Pro</h3>
+                            <p class="text-gray-600 mb-4">Learn the step-by-step process of installing our premium
+                                aluminum tracks with professional results...</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="text-secondary font-medium hover:underline">Read More</a>
+                                <span class="text-gray-400 text-sm">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="./images/Finials/IMP Aluminium Alpina.webp" alt="Finials"
+                            class="w-full h-48 object-contain bg-backColor">
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Decor Tips</span>
+                                <span class="text-gray-500 ml-3 text-sm">Dec 8, 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Choosing the Perfect Finials for Your Curtain Rods</h3>
+                            <p class="text-gray-600 mb-4">Discover how the right finials can enhance your room's
+                                aesthetic and complement your existing decor...</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="text-secondary font-medium hover:underline">Read More</a>
+                                <span class="text-gray-400 text-sm">7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="./images/Tassels/Tassels30.webp" alt="Tassels"
+                            class="w-full h-48 object-contain bg-backColor">
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Product
+                                    Spotlight</span>
+                                <span class="text-gray-500 ml-3 text-sm">Dec 5, 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">The Art of Using Tassels in Modern Interior Design</h3>
+                            <p class="text-gray-600 mb-4">Explore how traditional tassels are making a comeback in
+                                contemporary home design...</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="text-secondary font-medium hover:underline">Read More</a>
+                                <span class="text-gray-400 text-sm">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 4 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="./images/Pipes/round/round1.webp" alt="Curtain Rods"
+                            class="w-full h-48 object-contain bg-backColor">
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Buying Guide</span>
+                                <span class="text-gray-500 ml-3 text-sm">Dec 3, 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Steel vs. Aluminum: Which Curtain Rod Material is Right?
+                            </h3>
+                            <p class="text-gray-600 mb-4">Compare different curtain rod materials to make the best
+                                choice for your home...</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="text-secondary font-medium hover:underline">Read More</a>
+                                <span class="text-gray-400 text-sm">8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 5 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="./images/TIE BACK/TIE BACK 3.webp" alt="Tie Backs"
+                            class="w-full h-48 object-contain bg-backColor">
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Styling
+                                    Tips</span>
+                                <span class="text-gray-500 ml-3 text-sm">Nov 30, 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Creative Ways to Style Curtains with Tie Backs</h3>
+                            <p class="text-gray-600 mb-4">Learn various techniques to create stunning curtain
+                                arrangements using our tie back collection...</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="text-secondary font-medium hover:underline">Read More</a>
+                                <span class="text-gray-400 text-sm">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 6 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="./images/Curtain Accessory/Ring 1.webp" alt="Curtain Rings"
+                            class="w-full h-48 object-contain bg-backColor">
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Maintenance</span>
+                                <span class="text-gray-500 ml-3 text-sm">Nov 28, 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Maintaining Your Curtain Hardware: A Complete Guide</h3>
+                            <p class="text-gray-600 mb-4">Keep your curtain accessories in perfect condition with these
+                                professional maintenance tips...</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="text-secondary font-medium hover:underline">Read More</a>
+                                <span class="text-gray-400 text-sm">10 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button
+                        class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition">
+                        Load More Articles
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <a href="index.html" class="flex-shrink-0 items-center justify-center">
+                        <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-40" />
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Transform your windows with our premium curtain accessories.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/KohinoorIndia.org/"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kohinoor_india_org/"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="tel:+919821339373" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="index.html#review" class="text-gray-400 hover:text-white">Review</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Products</h3>
+                    <ul class="space-y-4">
+                        <li><a href="Tracks.html" class="text-gray-400 hover:text-white">Imp High Grade Aluminium
+                                Tracks</a></li>
+                        <li><a href="Finials.html" class="text-gray-400 hover:text-white">Imp Finials</a></li>
+                        <li><a href="Tassels.html" class="text-gray-400 hover:text-white">Imp Tassels</a></li>
+                        <li><a href="Pipes.html" class="text-gray-400 hover:text-white">Imp Steel Pipes and Rods</a>
+                        </li>
+                        <li><a href="CurtainAccessory.html" class="text-gray-400 hover:text-white">Imp Curtain
+                                Accessory</a></li>
+                        <li><a href="TieBack.html" class="text-gray-400 hover:text-white">Imp Tie Backs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-400">
+                            <i class="ri-map-pin-line mr-3"></i>
+                            <span>1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan, Chincholi
+                                Phatak Gate, Chincholi-Malad (West), Mumbai 400 064, India.</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="ri-phone-line mr-3"></i>
+                            <span>+91 98213 39373</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="ri-time-line mr-3"></i>
+                            <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-wrap justify-between items-center">
+                    <p class="text-gray-400">
+                        &copy; 2025 Kohinoor All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating contact buttons -->
+    <a href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Curtain%20Accessories%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
+        class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+        target="_blank">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <a href="tel:+919821339373"
+        class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200">
+        <i class="ri-phone-line"></i>
+    </a>
+
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuItems = mobileMenu.querySelectorAll("a");
+
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        menuItems.forEach((item) => {
+            item.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+            });
+        });
+
+        // Category filter functionality (basic example)
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('button[class*="px-4 py-2"]');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-white', 'shadow-md');
+                        btn.classList.add('hover:bg-white', 'hover:shadow-md');
+                    });
+
+                    // Add active class to clicked button
+                    this.classList.add('bg-white', 'shadow-md');
+                    this.classList.remove('hover:bg-white', 'hover:shadow-md');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
