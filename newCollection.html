@@ -1,0 +1,4698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/kohinoor-logo.ico" />
+    <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              secondary: "#E67E22",
+              backColor: "#d0d2d6",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white min-h-screen">
+    <header
+      class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
+    >
+      <nav class="w-full flex items-center justify-between px-6 py-4">
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0">
+          <img
+            src="./icons/kohinoor-logo.png"
+            alt="Kohinoor Logo"
+            class="w-28"
+          />
+        </a>
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="index.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#products"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="text-blue-400 font-semibold transition"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="newCollection.html" class="text-blue-400 font-semibold transition"
+              >New Collection</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#review"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Review</a
+            >
+          </li>
+        </ul>
+        <!-- Contact Button -->
+        <a
+          href="tel:+919821339373"
+          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
+        </a>
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="md:hidden text-white text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
+      >
+        <a href="index.html" class="block hover:text-blue-400 transition"
+          >Home</a
+        >
+        <a href="about.html" class="block hover:text-blue-400 transition"
+          >About Us</a
+        >
+        <a
+          href="index.html#products"
+          class="block hover:text-blue-400 transition"
+          >Products</a
+        >
+        <a href="blog.html" class="block text-blue-400 transition">Blog</a>
+        <a href="newCollection.html" class="block text-blue-400 transition">New Collection</a>
+        <a href="index.html#review" class="block hover:text-blue-400 transition"
+          >Review</a
+        >
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-2">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            Product Catalogues & PDFs
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <!-- PDF Preview (A4, scaled down) -->
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1pdcEL-xXiYmzPGmZV4r9H0_tNNxci499/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+
+              <!-- Footer -->
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Kohinoor New Collection Catalogue
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1pdcEL-xXiYmzPGmZV4r9H0_tNNxci499"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1nb7uByY2iulfFEfaOtHIBAhhsuNJuacj/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  ALLUMINIUM TUBE RING
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1nb7uByY2iulfFEfaOtHIBAhhsuNJuacj"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1UtNJtzqk1rVkF8OJopbfOQFsJK-Q_OWA/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Arabian Ripple Fold Tap
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1UtNJtzqk1rVkF8OJopbfOQFsJK-Q_OWA"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1dLN3nuf7bWAAXHYF8AqTyQsI4n2LLmW_/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  B Crystal & steel PDF
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1dLN3nuf7bWAAXHYF8AqTyQsI4n2LLmW_"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1_pKnRQ6dxOfATBeEcg4ex_0GPSHQ9RUP/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Bracket Hook
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1_pKnRQ6dxOfATBeEcg4ex_0GPSHQ9RUP"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1xDgx7ss61WV5FAdapLQS6LH1HpVXTVuE/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  BRASS
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1xDgx7ss61WV5FAdapLQS6LH1HpVXTVuE"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1jQx-8gm0QxKjrcCwhuphpVe0ZxfIWT35/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  C Wood PDF
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1jQx-8gm0QxKjrcCwhuphpVe0ZxfIWT35"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/15gB0unDzBwhNllU3P9-lHcMxV43P93qM/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  D White Mattal PDF
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=15gB0unDzBwhNllU3P9-lHcMxV43P93qM"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1zRW6MmWC9mDKZgPFlF_Xrbp-ytme5XwB/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  elbow
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1zRW6MmWC9mDKZgPFlF_Xrbp-ytme5XwB"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1GGMuR8ujc3ScTVh4BOvAwZ3OHknRYXqD/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  I.M.P Telescopic Track
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1GGMuR8ujc3ScTVh4BOvAwZ3OHknRYXqD"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1IWBKUmfMDI2nYDIptQ5OKa6mN_yuLBQA/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1016 TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1IWBKUmfMDI2nYDIptQ5OKa6mN_yuLBQA"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1oAfHSBru7yue7aZWVAGelbgBZWFk5g7D/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1017 TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1oAfHSBru7yue7aZWVAGelbgBZWFk5g7D"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ywC_t0m_7JbzyiESBGWFeIvZQ8399BI6/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1018 track
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ywC_t0m_7JbzyiESBGWFeIvZQ8399BI6"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1xWkvdLYs6AzrZk70xPwcgLwXKFmZDfoV/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1019 TRACK BLACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1xWkvdLYs6AzrZk70xPwcgLwXKFmZDfoV"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/123OEEvoSP7_ybqcH3ADCsz4wta0cQH4F/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1020 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=123OEEvoSP7_ybqcH3ADCsz4wta0cQH4F"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/18golJcpuRfas7foZfH8a_2g95vvja9e_/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1021 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=18golJcpuRfas7foZfH8a_2g95vvja9e_"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1uZT09bv8kmgPIK-89uGQ_YeTo-yOJIO3/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1022 TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1uZT09bv8kmgPIK-89uGQ_YeTo-yOJIO3"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1eMPfUDxf-1WnUdXviDu9r15LatunxLZK/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1023 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1eMPfUDxf-1WnUdXviDu9r15LatunxLZK"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/16mxhpaPU-0cfRC6slNWdVnyenQpuH2Hp/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1024 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=16mxhpaPU-0cfRC6slNWdVnyenQpuH2Hp"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1bWX78e7LxG71lDRvgRooTfmxkpnB53Zb/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1025 BENDABLE WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1bWX78e7LxG71lDRvgRooTfmxkpnB53Zb"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ZN_eX9KnLqGXuqx3-MX-YAz6Eb5DTT0l/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1026 TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ZN_eX9KnLqGXuqx3-MX-YAz6Eb5DTT0l"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/18MGGpcNtdWQUHoTyRofzQCywkHPP-GNL/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1027 BENDABLE WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=18MGGpcNtdWQUHoTyRofzQCywkHPP-GNL"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1BZ5vt0-sRtLRSrHjpmHrlLBUPpYJhOlI/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1028 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1BZ5vt0-sRtLRSrHjpmHrlLBUPpYJhOlI"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/14vOtpIko9f56N6UYq3W36aKTkiaX3oaK/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1029 ANTIC
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=14vOtpIko9f56N6UYq3W36aKTkiaX3oaK"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1jiHw1AWRxjcW2mOSRilkG2yylC-l0H4I/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1029 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1jiHw1AWRxjcW2mOSRilkG2yylC-l0H4I"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1WoSvtaTU-J319HA6oHY8uU2wA4unnRII/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1030 Track
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1WoSvtaTU-J319HA6oHY8uU2wA4unnRII"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1kqSsQLlkRucPKHEMT4oXzHwV3e_2-Dqy/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1031 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1kqSsQLlkRucPKHEMT4oXzHwV3e_2-Dqy"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1X30gGex9o3mblR_bhwPQ7OjEVhwE-b93/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1032 Antic
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1X30gGex9o3mblR_bhwPQ7OjEVhwE-b93"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1qmli6aCOK-OS_o2s3gm5vK8lhHMnnW59/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1032 White
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1qmli6aCOK-OS_o2s3gm5vK8lhHMnnW59"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/17LC0LVRGUYLISWG3iiE9-O8kvaULF0MD/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1033 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=17LC0LVRGUYLISWG3iiE9-O8kvaULF0MD"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1VXQ88-2qb_9OD96T6J1Kvfx7UXctQlvc/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1034 BENDABLE WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1VXQ88-2qb_9OD96T6J1Kvfx7UXctQlvc"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1QYLCjwmkJyPwGKmh82tCNfnXfoZG1AaG/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1035 ANTIQUE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1QYLCjwmkJyPwGKmh82tCNfnXfoZG1AaG"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1i8wbl6O2eYqA1MqWODoJ659teN8JvzxC/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1035 BLACK WN
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1i8wbl6O2eYqA1MqWODoJ659teN8JvzxC"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1z4mZDRrJlVbbu1tAgGbcmCN7Y22uzAXG/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1035 ROSE GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1z4mZDRrJlVbbu1tAgGbcmCN7Y22uzAXG"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ixHfZwvnxhnnixmvJ1CLZoSBYA7Mevmi/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1035 SILVER
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ixHfZwvnxhnnixmvJ1CLZoSBYA7Mevmi"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ynvpJfRmp8k6wNgHgbbf5yn6HAqLtFZy/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1035 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ynvpJfRmp8k6wNgHgbbf5yn6HAqLtFZy"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1wakijfD4pXA7Q2pZugMvj3q2Q4NA98Tx/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1035 ZELKOVA
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1wakijfD4pXA7Q2pZugMvj3q2Q4NA98Tx"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/14cqbPa3rkoiwcV41avi2PEKUrR4RaOIb/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1036 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=14cqbPa3rkoiwcV41avi2PEKUrR4RaOIb"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1IkSg6M9Z9jKJ-D_n6YsiwY5ps53ZNLWF/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1037 BLACK WN
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1IkSg6M9Z9jKJ-D_n6YsiwY5ps53ZNLWF"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1hUBCX5fsnZN63CVBV0eCpZhWoDKn5iju/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1037 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1hUBCX5fsnZN63CVBV0eCpZhWoDKn5iju"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1eYGNwF38sS3whwgZXO6hP0u1kCFDkGK7/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1037 ZELKOVA
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1eYGNwF38sS3whwgZXO6hP0u1kCFDkGK7"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/12z6IMGdlu5xCn7ibuRz3UEIjUZ9L-Tpg/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1038 WITHOUT STICHING TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=12z6IMGdlu5xCn7ibuRz3UEIjUZ9L-Tpg"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1Q3lQUh3Owo2P38c6UX6BXZ7eWX8lHbcG/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1039 PALMET WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1Q3lQUh3Owo2P38c6UX6BXZ7eWX8lHbcG"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1b7YCboXz6u881JbT6EboMJ6m_5ZZ7jES/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1039 SINGLE PALMENT GRAY
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1b7YCboXz6u881JbT6EboMJ6m_5ZZ7jES"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1Ey_Y23q4NMKRL8_1lrqC9W1MXt0KCfaD/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1040 TRACK GREY
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1Ey_Y23q4NMKRL8_1lrqC9W1MXt0KCfaD"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1PPuyhNBwLmgQqI0pox6epWJs2jZqFOqb/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1040 TRACK WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1PPuyhNBwLmgQqI0pox6epWJs2jZqFOqb"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1eC6S4XRmbyU5_OTuVIyT2pT3PTmN9JnR/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1041 Antic
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1eC6S4XRmbyU5_OTuVIyT2pT3PTmN9JnR"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1K0hZbRZFpZNnjqAYwlYxwyo1oZvMX-9A/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1041 Black
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1K0hZbRZFpZNnjqAYwlYxwyo1oZvMX-9A"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1SCMmtEj_gwfW-aw6dxuHkrAK5KM4msvA/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1041 Gold
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1SCMmtEj_gwfW-aw6dxuHkrAK5KM4msvA"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1hnINe1xkUc-QX-3h3nLzTXcqiA-8ZBRj/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1041 Rose Gold
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1hnINe1xkUc-QX-3h3nLzTXcqiA-8ZBRj"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1z9QL1xbs7s40oKd0ARiugA3mWqRYp3_c/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1041 Silver
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1z9QL1xbs7s40oKd0ARiugA3mWqRYp3_c"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1YgtMfXJj6dx2u_3KlO5KMreCH2cMUB-8/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1041 White
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1YgtMfXJj6dx2u_3KlO5KMreCH2cMUB-8"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ToTKYIMXFxRbJXtdtmXfGz8F_lrRfRQz/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 ANtic
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ToTKYIMXFxRbJXtdtmXfGz8F_lrRfRQz"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1JwJCiWO-6U_5ivACwSFGQmejFjg3DyfV/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 Black
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1JwJCiWO-6U_5ivACwSFGQmejFjg3DyfV"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1jgpTi9k92nqveC93mLw8P9YwhXyQrkcQ/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 Rose Gold
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1jgpTi9k92nqveC93mLw8P9YwhXyQrkcQ"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1D8BYO2lgbEy9Hc5uPEDBX1UK1yVS2yjp/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 Silver
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1D8BYO2lgbEy9Hc5uPEDBX1UK1yVS2yjp"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1mZPceCMfXx72eQoAqQnmORP5R3B2C-35/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 Wallnutt
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1mZPceCMfXx72eQoAqQnmORP5R3B2C-35"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1nI20noC43Nh0fFX1ulYYE3VT9IHW0jfS/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 White
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1nI20noC43Nh0fFX1ulYYE3VT9IHW0jfS"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1oBqfRGHa1Il9xFMSjnc_HIOJ8U_xkl1C/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1042 Zelkova
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1oBqfRGHa1Il9xFMSjnc_HIOJ8U_xkl1C"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1HpD_9GvHbIlGTtfz1o8OxJKPyHrG0Rzp/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1043
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1HpD_9GvHbIlGTtfz1o8OxJKPyHrG0Rzp"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1GMTcmvqqIrdYzjgxD2jTXU6IXfpoqmXt/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1044 ANTIC
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1GMTcmvqqIrdYzjgxD2jTXU6IXfpoqmXt"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1bQSE3vHEJQXQ6XzyJ9fpKEey4jYKxFqS/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1044 BLACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1bQSE3vHEJQXQ6XzyJ9fpKEey4jYKxFqS"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1lvw_6mC_LEN6xdiD-aKs5UHwDrpncJFq/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1044 GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1lvw_6mC_LEN6xdiD-aKs5UHwDrpncJFq"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/10Jp3OFH1dIgKPFoTU8bhEsB1fZKNHoiT/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1044 ROSE GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=10Jp3OFH1dIgKPFoTU8bhEsB1fZKNHoiT"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1CMwq4ZlL8UCaD6PdAppPF0odBn6wSXCL/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1044 SILVER
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1CMwq4ZlL8UCaD6PdAppPF0odBn6wSXCL"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1poMvT3lPU33KpDnEw_Nc3Gt6usyWIUwS/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1044 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1poMvT3lPU33KpDnEw_Nc3Gt6usyWIUwS"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1FpMxGqdHex44P5wc6_3vwI1g6KX3yLC1/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1045
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1FpMxGqdHex44P5wc6_3vwI1g6KX3yLC1"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1NnGydA5R1jVvBhUBqjFqYhvTxRxjD_b8/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1046 TRACK BLACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1NnGydA5R1jVvBhUBqjFqYhvTxRxjD_b8"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1zLPM6DbmESQEtLIj73FBU1g4pOzdmP5R/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1046 TRACK WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1zLPM6DbmESQEtLIj73FBU1g4pOzdmP5R"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1O-E_Nb-pAsRb5irPeM92GF90FS_bY2pf/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1047 DOUBLE TRIPPLE PANEL
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1O-E_Nb-pAsRb5irPeM92GF90FS_bY2pf"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1z2kD5QcyOHqYFkHfoDN4RCtv17hPqVn_/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1048 ANTIC
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1z2kD5QcyOHqYFkHfoDN4RCtv17hPqVn_"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1slIf8bNYwkHfCQR_i_j7DSxjfbneiCCk/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1048 ROSE GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1slIf8bNYwkHfCQR_i_j7DSxjfbneiCCk"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1fUI-j-gOv0-FBL6VmlbDBZhnvgEM5kz0/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1048 SILVER
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1fUI-j-gOv0-FBL6VmlbDBZhnvgEM5kz0"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1vMcZwqq2GiagkUMma-TngsR7qugzAQvG/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1048 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1vMcZwqq2GiagkUMma-TngsR7qugzAQvG"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/12nFcJuiAMbfSdqtg74gbXmh5jdyoJa8J/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1048 WN
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=12nFcJuiAMbfSdqtg74gbXmh5jdyoJa8J"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1oXQgVt4VWgZa0RNFFffdlSAjYPt_OE-U/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1048 ZELKOVA
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1oXQgVt4VWgZa0RNFFffdlSAjYPt_OE-U"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1oP7TJ_FDm8_NMvXvpoC3_58i9UiHTEeV/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1049 BLACK WALLNUTT
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1oP7TJ_FDm8_NMvXvpoC3_58i9UiHTEeV"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/12vaiTKIfii7IZyyANhb1I3sBVuGSEFIB/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1049 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=12vaiTKIfii7IZyyANhb1I3sBVuGSEFIB"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1FRy0IJvjQM3Dvmha-7zpteNeZQRn2ADy/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1049 ZELKOVA
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1FRy0IJvjQM3Dvmha-7zpteNeZQRn2ADy"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1U1rThfuUo124IEoDEmtRgYKBHBBA9d70/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1050 Antic
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1U1rThfuUo124IEoDEmtRgYKBHBBA9d70"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1mUhZ0kdKVM4PmO_UAE6cZga9pymuVlSA/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1050 Black
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1mUhZ0kdKVM4PmO_UAE6cZga9pymuVlSA"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1rFOYmsv4rDIcOfP4njp2MU2RhCcc2q7o/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1050 Gold
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1rFOYmsv4rDIcOfP4njp2MU2RhCcc2q7o"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1FXTuiAv6zHHcRq92xekLRQqhuDhJ6-SW/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1050 Rose Gold
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1FXTuiAv6zHHcRq92xekLRQqhuDhJ6-SW"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1f4nCfz4mkIGyNbb1qBzQPXOZQyZFZGFe/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1050 Silver
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1f4nCfz4mkIGyNbb1qBzQPXOZQyZFZGFe"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1K6qQlb8ilPfJrpttI717YA13dlzzwjBw/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1050 White
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1K6qQlb8ilPfJrpttI717YA13dlzzwjBw"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1BkfPuSBzk5yuMbVWWB-4QKXbvDs2IV9S/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 ANTIQUE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1BkfPuSBzk5yuMbVWWB-4QKXbvDs2IV9S"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1pk7VPaYnpPPGRtgu4x9_JEf61__bcRIe/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 BLACK WALLNUTT
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1pk7VPaYnpPPGRtgu4x9_JEf61__bcRIe"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1PoKLkiKVoeNw5mr5_OboFpDYyPFeRGXO/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 BLACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1PoKLkiKVoeNw5mr5_OboFpDYyPFeRGXO"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1prXrzEueVGLKYHc9U4mPmuDt1Pb9Zg2W/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 ROSE GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1prXrzEueVGLKYHc9U4mPmuDt1Pb9Zg2W"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1w5lZLt9UiwfuyuoKzwtZ2f_vghpeckln/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 SILVER
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1w5lZLt9UiwfuyuoKzwtZ2f_vghpeckln"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1hmIVjwt6xsyY2smsalfvGQuX5juy_NTh/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1hmIVjwt6xsyY2smsalfvGQuX5juy_NTh"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1XV_XId3Ri5VPB6ddZ4tJL-HWV_GxCYmi/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1051 ZELKOVA
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1XV_XId3Ri5VPB6ddZ4tJL-HWV_GxCYmi"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ZrGG2Mp0hacm2ZZ30uSP2hTRUX6qAUnS/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1052
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ZrGG2Mp0hacm2ZZ30uSP2hTRUX6qAUnS"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1FqX43MEQhAk_WR5OxTbCPsBK4YKAs1O6/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1053 ANTIC
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1FqX43MEQhAk_WR5OxTbCPsBK4YKAs1O6"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1DKN_XqkdEgxqDBazFKWczkh_sfevZIMK/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1053 BLACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1DKN_XqkdEgxqDBazFKWczkh_sfevZIMK"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1HdW4REaskVKuHMJvmCBBSCvRfCLngfCU/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1053 GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1HdW4REaskVKuHMJvmCBBSCvRfCLngfCU"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ynQYrJ7N7TSWDI1fGRb9steHLMDqWppQ/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1053 ROSE GOLD
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ynQYrJ7N7TSWDI1fGRb9steHLMDqWppQ"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/11Od6DGAIpfm6pNCh0b5BwiJaeBxrJhK1/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1053 SILVER
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=11Od6DGAIpfm6pNCh0b5BwiJaeBxrJhK1"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1meZpPc14uLUVCJgz2rG3O675vpPBXdVB/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1053 WHITE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1meZpPc14uLUVCJgz2rG3O675vpPBXdVB"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1qBJymcT5Kud4du84R1CJ6if0-eeoqbMz/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1054 Antic
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1qBJymcT5Kud4du84R1CJ6if0-eeoqbMz"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/10_8XtKJDReF_CWGGTyi3wSPmYUipr__N/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1054 Black
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=10_8XtKJDReF_CWGGTyi3wSPmYUipr__N"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1wtQe2ypyunpS43A8rT-sCaqVTZ1ZCChV/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1054 Rose gold
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1wtQe2ypyunpS43A8rT-sCaqVTZ1ZCChV"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1mFntsiA0QuNMk_TpkCAJhvlSQSW5v0mq/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1054 Silver
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1mFntsiA0QuNMk_TpkCAJhvlSQSW5v0mq"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1dSncc_BpiHWoMHj3JGeGOXOeSvHfRWaJ/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1054 Wallnutt
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1dSncc_BpiHWoMHj3JGeGOXOeSvHfRWaJ"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1n_myQipcXPZCYZyO-75yl6zEf34OH4YF/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  imp 1054 white
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1n_myQipcXPZCYZyO-75yl6zEf34OH4YF"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1IPTU8paFyt2DwiXjA_pJuLJRB3tto8yo/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1054 Zelkova
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1IPTU8paFyt2DwiXjA_pJuLJRB3tto8yo"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1GtFOXFiCfeoQoJqY8gUgEj1E5wuXEEmF/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1055 patti velkoro
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1GtFOXFiCfeoQoJqY8gUgEj1E5wuXEEmF"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1uRhGR32RQ4B7KL-jP2SIaHrPeThAA6KC/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1057 TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1uRhGR32RQ4B7KL-jP2SIaHrPeThAA6KC"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1kvmR9Zk_i43BZt07HdrC7_YQ37XaNsPm/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1058 TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1kvmR9Zk_i43BZt07HdrC7_YQ37XaNsPm"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1h64Hc8tiAQMaJQajdu_oULkW9-jNiF2P/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP 1059 Roman
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1h64Hc8tiAQMaJQajdu_oULkW9-jNiF2P"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1pQTwkskyDHpykHV3_1MJu0NoJDE-6XWY/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP ALLU SOCKET
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1pQTwkskyDHpykHV3_1MJu0NoJDE-6XWY"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1gTtQGFam1GWU-TjXzBy5Qgz9nlLFe12O/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP HOOK STICK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1gTtQGFam1GWU-TjXzBy5Qgz9nlLFe12O"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1eE3Eo0imwGb6GdDVOoaqyKDFruXDZVTP/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP KTS TASSLE PHOTOS
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1eE3Eo0imwGb6GdDVOoaqyKDFruXDZVTP"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1MkcpjzNrGVmctJbhZz55duEzBYHgmhmE/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP KTS TASSLE PRICE LIST
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1MkcpjzNrGVmctJbhZz55duEzBYHgmhmE"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1P2iNWPd-i4MmRTLO61fGu0PYF5hz9Rd8/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP LED HALF ROUND TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1P2iNWPd-i4MmRTLO61fGu0PYF5hz9Rd8"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1nbp4FBX9IbKPgQYaGAcFK5AFltxgekw0/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP LED SQAURE TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1nbp4FBX9IbKPgQYaGAcFK5AFltxgekw0"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1mVNXmInNsBVu7lr07_aIOIWJegIWnuIg/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP NEW ARABIAN RUNNER
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1mVNXmInNsBVu7lr07_aIOIWJegIWnuIg"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1w_rMu7s9u8f23hgCBWzt9CamplakAe9t/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP OVER LOCK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1w_rMu7s9u8f23hgCBWzt9CamplakAe9t"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/11yVAZK90U8m07M2xVlnbSIeG54LGiK0y/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Imp shower Curtain Set
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=11yVAZK90U8m07M2xVlnbSIeG54LGiK0y"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1VUyK3uaf-CIokUefiE1CRR2vShqOOWZn/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP TAI BACKS 1240 TO 1255
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1VUyK3uaf-CIokUefiE1CRR2vShqOOWZn"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1GTZ6uiRcaUIYeOldsUjABgepOp-3NDMD/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP TAI BACKS 1260
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1GTZ6uiRcaUIYeOldsUjABgepOp-3NDMD"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1dcH3m3nTVNw-QtLU8gzAuJf70-HUT3zi/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP TAI BACKS CRYSTAL
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1dcH3m3nTVNw-QtLU8gzAuJf70-HUT3zi"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1tjiiBTUfXg79mvG5aWFva--qhZ0jcXFv/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP TAI BACKS EXCLUSIVE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1tjiiBTUfXg79mvG5aWFva--qhZ0jcXFv"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1uUQ0a0kjrqf_oZev78XlAYhTBT8EljGu/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP TAI BACKS NEW
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1uUQ0a0kjrqf_oZev78XlAYhTBT8EljGu"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1jBZLCBWy_wUbGjFGre3p9Khbqu-6qZBS/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP TAI BACKS
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1jBZLCBWy_wUbGjFGre3p9Khbqu-6qZBS"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/16jG5tfzItWB01d4cTwUeWUeiEVQ8SxHo/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  IMP WALL TO WALL
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=16jG5tfzItWB01d4cTwUeWUeiEVQ8SxHo"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ajrpwwTSrcL5cwsIZVM-RqwLedpwKEhh/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Kohinoor Catalog 2020-2021 low-1
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ajrpwwTSrcL5cwsIZVM-RqwLedpwKEhh"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1CsrsZAts9IMHB0pOnTsuNN9vTvR1veCY/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  NEW TRACK LIGHTT
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1CsrsZAts9IMHB0pOnTsuNN9vTvR1veCY"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ZPN8deiMXPz2yvIcnOADEZ_Y5l9dicu9/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  PARDA TAPE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ZPN8deiMXPz2yvIcnOADEZ_Y5l9dicu9"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1FKG2HBNjIrrGueBbsAJi-c9uHHqxtcNH/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  PRICE LIST TRACK
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1FKG2HBNjIrrGueBbsAJi-c9uHHqxtcNH"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1ANGHzHaKjR3KvDsZxV79G19VPYWvYzKQ/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  ROD CAFE
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1ANGHzHaKjR3KvDsZxV79G19VPYWvYzKQ"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1pMkv-sZOU3lMTjlv38v-ZQlJ5NcYnrAN/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  ROD COMET
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1pMkv-sZOU3lMTjlv38v-ZQlJ5NcYnrAN"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1f4rwcazWxJQHuTZJPCj18kY1Zu6HjcId/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  ROD LUXURY
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1f4rwcazWxJQHuTZJPCj18kY1Zu6HjcId"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1mJhGMUtyYNrMbrGuqXi_E_twUUd8XYW6/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Rod Traverse
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1mJhGMUtyYNrMbrGuqXi_E_twUUd8XYW6"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/1iAZxGsxDYl7osO9zxO-COlcG5GDQ_q19/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  ROLLER KOHINOOR LIST
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1iAZxGsxDYl7osO9zxO-COlcG5GDQ_q19"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl md:max-w-[350px] transition-shadow"
+            >
+              <div class="relative w-full aspect-[1/1.414] bg-gray-100">
+                <iframe
+                  src="https://drive.google.com/file/d/14tVnh6GjGBoqMSUGILIx_R0K5ROJ8d2H/preview"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="p-4 border-t">
+                <h3
+                  class="text-sm md:text-base font-semibold mb-2 line-clamp-2"
+                >
+                  Steel Socket
+                </h3>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500"> PDF </span>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=14tVnh6GjGBoqMSUGILIx_R0K5ROJ8d2H"
+                    target="_blank"
+                    class="bg-primary text-white px-3 py-1.5 rounded-md text-xs font-medium hover:bg-primary/90 transition"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <a
+              href="index.html"
+              class="flex-shrink-0 items-center justify-center"
+            >
+              <img
+                src="./icons/kohinoor-logo.png"
+                alt="Kohinoor Logo"
+                class="w-40"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Transform your windows with our premium curtain accessories.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/KohinoorIndia.org/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kohinoor_india_org/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="index.html" class="text-gray-400 hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-gray-400 hover:text-white"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+919821339373"
+                  class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" class="text-gray-400 hover:text-white"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#review"
+                  class="text-gray-400 hover:text-white"
+                  >Review</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Products</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="Tracks.html" class="text-gray-400 hover:text-white"
+                  >Imp High Grade Aluminium Tracks</a
+                >
+              </li>
+              <li>
+                <a href="Finials.html" class="text-gray-400 hover:text-white"
+                  >Imp Finials</a
+                >
+              </li>
+              <li>
+                <a href="Tassels.html" class="text-gray-400 hover:text-white"
+                  >Imp Tassels</a
+                >
+              </li>
+              <li>
+                <a href="Pipes.html" class="text-gray-400 hover:text-white"
+                  >Imp Steel Pipes and Rods</a
+                >
+              </li>
+              <li>
+                <a
+                  href="CurtainAccessory.html"
+                  class="text-gray-400 hover:text-white"
+                  >Imp Curtain Accessory</a
+                >
+              </li>
+              <li>
+                <a href="TieBack.html" class="text-gray-400 hover:text-white"
+                  >Imp Tie Backs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-400">
+                <i class="ri-map-pin-line mr-3"></i>
+                <span
+                  >1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan,
+                  Chincholi Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
+                  India.</span
+                >
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-phone-line mr-3"></i>
+                <span>+91 98213 39373</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-time-line mr-3"></i>
+                <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-wrap justify-between items-center">
+            <p class="text-gray-400">
+              &copy; 2025 Kohinoor All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating contact buttons -->
+    <a
+      href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Curtain%20Accessories%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
+      class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+      target="_blank"
+    >
+      <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <a
+      href="tel:+919821339373"
+      class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+    >
+      <i class="ri-phone-line"></i>
+    </a>
+
+    <script>
+      // Mobile menu functionality
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuItems = mobileMenu.querySelectorAll("a");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Category filter functionality (basic example)
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(
+          'button[class*="px-4 py-2"]'
+        );
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("bg-white", "shadow-md");
+              btn.classList.add("hover:bg-white", "hover:shadow-md");
+            });
+
+            // Add active class to clicked button
+            this.classList.add("bg-white", "shadow-md");
+            this.classList.remove("hover:bg-white", "hover:shadow-md");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
