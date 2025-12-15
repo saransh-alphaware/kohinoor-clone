@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/kohinoor-logo.ico" />
+    <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              secondary: "#E67E22",
+              backColor: "#d0d2d6",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white min-h-screen">
+    <header
+      class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
+    >
+      <nav class="w-full flex items-center justify-between px-6 py-4">
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0">
+          <img
+            src="./icons/kohinoor-logo.png"
+            alt="Kohinoor Logo"
+            class="w-28"
+          />
+        </a>
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="index.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#products"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Products</a
+            >
+          </li>
+          <li>
+              <a href="blog.html" class="text-white font-semibold hover:text-blue-400 transition">Blog</a>
+          </li>
+          <li>
+              <a href="newCollection.html" class="text-white font-semibold hover:text-blue-400 transition">New Collection</a>
+          </li>
+          <li>
+              <a href="distributor.html" class="text-white font-semibold hover:text-blue-400 transition">Become a Distributor</a>
+          </li>
+          <li>
+            <a
+              href="index.html#review"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Review</a
+            >
+          </li>
+        </ul>
+        <!-- Contact Button -->
+        <a
+          href="tel:+919821339373"
+          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
+        </a>
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="md:hidden text-white text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
+      >
+        <a href="index.html" class="block hover:text-blue-400 transition"
+          >Home</a
+        >
+        <a href="about.html" class="block hover:text-blue-400 transition"
+          >About Us</a
+        >
+        <a
+          href="index.html#products"
+          class="block hover:text-blue-400 transition"
+          >Products</a
+        >
+        <a href="blog.html" class="block hover:text-blue-400 transition">Blog</a>
+        <a href="newCollection.html" class="block hover:transition">New Collection</a>
+        <a href="distributor.html" class="block hover:transition">Become a Distributor</a>
+        <a href="index.html#review" class="block hover:text-blue-400 transition"
+          >Review</a
+        >
+      </div>
+    </header>
+    <main class="pt-24">
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-primary to-primary/80 text-white py-20">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Become a Kohinoor Distributor</h1>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Partner with India's leading curtain accessories manufacturer and grow your business with our
+                        award-winning product range, excellent margins, and nationwide support.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#application-form"
+                            class="bg-secondary px-8 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition">
+                            Apply Now
+                        </a>
+                        <a href="tel:+919821339373"
+                            class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                            Call Us
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Why Partner with Kohinoor?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                            <span>Attractive profit margins & incentive schemes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                            <span>Premium quality products with 25+ years brand trust</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                            <span>Marketing & promotional support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                            <span>Exclusive territory rights available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Distributor Benefits & Support</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Join our growing network of successful distributors and enjoy comprehensive support for your
+                    business growth
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-gradient-to-br from-orange-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-money-rupee-circle-fill text-4xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">High Profit Margins</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Competitive pricing structure with attractive margins to ensure profitable business growth
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-award-fill text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Premium Brand</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Associate with an award-winning brand trusted by professionals across India
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-green-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-truck-fill text-4xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Reliable Supply</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Consistent stock availability and timely delivery to meet your customer demands
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-megaphone-fill text-4xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Marketing Support</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Catalogs, product samples, display materials, and digital marketing assistance
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-red-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-presentation-line text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Training Programs</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Product knowledge training and sales technique workshops for your team
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-map-pin-range-fill text-4xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Territory Protection</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Exclusive territory rights to minimize competition and maximize your market share
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-indigo-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-box-3-fill text-4xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Wide Product Range</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Comprehensive portfolio of curtain tracks, finials, tassels, and accessories
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-pink-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div
+                            class="w-16 h-16 bg-pink-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="ri-customer-service-2-fill text-4xl text-pink-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Dedicated Support</h3>
+                        <p class="text-gray-600 text-center text-sm">
+                            Assigned relationship manager for personalized assistance and quick resolution
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Distributor Network Map -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Our Pan-India Distributor Network</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Join our extensive network of distributors serving customers across major cities in India
+                </p>
+
+                <!-- India Map with Distributor Locations -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12">
+                    <div class="flex justify-center">
+                        <img src="./images/country.svg" alt="India Map"
+                            class="w-auto max-w-full md:min-h-[50vh] scale-110 md:scale-115 transition-transform" />
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <p class="text-gray-600 text-lg">
+                            <span class="font-bold text-secondary text-2xl">150+</span>
+                            Active Distributors Across India
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- City-wise Distributor Count -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="ri-building-fill text-3xl text-secondary mb-2"></i>
+                        <h4 class="font-bold text-lg mb-1">Mumbai</h4>
+                        <p class="text-gray-600">25+ Distributors</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="ri-building-fill text-3xl text-secondary mb-2"></i>
+                        <h4 class="font-bold text-lg mb-1">Delhi NCR</h4>
+                        <p class="text-gray-600">30+ Distributors</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="ri-building-fill text-3xl text-secondary mb-2"></i>
+                        <h4 class="font-bold text-lg mb-1">Bangalore</h4>
+                        <p class="text-gray-600">20+ Distributors</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="ri-building-fill text-3xl text-secondary mb-2"></i>
+                        <h4 class="font-bold text-lg mb-1">Pune</h4>
+                        <p class="text-gray-600">15+ Distributors</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="ri-building-fill text-3xl text-secondary mb-2"></i>
+                        <h4 class="font-bold text-lg mb-1">Other Cities</h4>
+                        <p class="text-gray-600">60+ Distributors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distributor Testimonials -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">What Our Distributors Say</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Hear from successful distributors who have grown their business with Kohinoor
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-user-fill text-3xl text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Rajesh Kumar</h4>
+                                <p class="text-sm text-gray-600">Mumbai Distributor</p>
+                                <div class="flex text-yellow-500 text-sm mt-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-3">
+                            "Partnering with Kohinoor has been one of the best business decisions. Their product quality
+                            is exceptional, and the support team is always responsive. My business has grown 3x in just
+                            2 years!"
+                        </p>
+                        <p class="text-sm text-secondary font-semibold">Partner since 2020</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-user-fill text-3xl text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Priya Sharma</h4>
+                                <p class="text-sm text-gray-600">Delhi Distributor</p>
+                                <div class="flex text-yellow-500 text-sm mt-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-3">
+                            "The product range is fantastic and the profit margins are very competitive. Kohinoor's
+                            marketing materials help us attract more customers. Highly recommend this partnership!"
+                        </p>
+                        <p class="text-sm text-secondary font-semibold">Partner since 2019</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-user-fill text-3xl text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Amit Patel</h4>
+                                <p class="text-sm text-gray-600">Bangalore Distributor</p>
+                                <div class="flex text-yellow-500 text-sm mt-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-3">
+                            "Excellent products and timely delivery. The training programs helped my staff understand
+                            the products better. Territory protection ensures healthy business growth. Very satisfied!"
+                        </p>
+                        <p class="text-sm text-secondary font-semibold">Partner since 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibition & Events Gallery -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Trade Shows & Exhibitions</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    We actively participate in major trade exhibitions across India, providing opportunities for
+                    distributors to network and showcase our products
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div
+                            class="h-64 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="ri-calendar-event-fill text-7xl text-secondary mb-3"></i>
+                                <p class="text-gray-700 font-bold">India Home Expo 2024</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">India Home Expo, Mumbai</h3>
+                            <p class="text-gray-600 text-sm mb-3">March 2024 - Showcasing our latest curtain accessories
+                                collection to 5000+ visitors</p>
+                            <p class="text-secondary font-semibold text-sm">Mumbai Exhibition Center</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div class="h-64 bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="ri-presentation-fill text-7xl text-secondary mb-3"></i>
+                                <p class="text-gray-700 font-bold">National Hardware Show</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Hardware Trade Fair, Delhi</h3>
+                            <p class="text-gray-600 text-sm mb-3">January 2024 - Product demonstrations and distributor
+                                networking sessions</p>
+                            <p class="text-secondary font-semibold text-sm">Pragati Maidan, Delhi</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div class="h-64 bg-gradient-to-br from-green-100 to-teal-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="ri-store-3-fill text-7xl text-secondary mb-3"></i>
+                                <p class="text-gray-700 font-bold">Interior Design Summit</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Design & Decor Expo, Bangalore</h3>
+                            <p class="text-gray-600 text-sm mb-3">November 2023 - Connecting with architects and
+                                interior designers nationwide</p>
+                            <p class="text-secondary font-semibold text-sm">BIEC, Bangalore</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div
+                            class="h-64 bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="ri-shield-star-fill text-7xl text-secondary mb-3"></i>
+                                <p class="text-gray-700 font-bold">Distributor Meet 2024</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Annual Distributor Conference</h3>
+                            <p class="text-gray-600 text-sm mb-3">February 2024 - Exclusive event for our distributor
+                                network with product launches</p>
+                            <p class="text-secondary font-semibold text-sm">Mumbai Head Office</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div
+                            class="h-64 bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="ri-home-gear-fill text-7xl text-secondary mb-3"></i>
+                                <p class="text-gray-700 font-bold">Home Décor Expo</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Asia Home Textiles, Pune</h3>
+                            <p class="text-gray-600 text-sm mb-3">September 2023 - Showcasing premium curtain finials
+                                and accessories</p>
+                            <p class="text-secondary font-semibold text-sm">Pune Exhibition Centre</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div
+                            class="h-64 bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="ri-community-fill text-7xl text-secondary mb-3"></i>
+                                <p class="text-gray-700 font-bold">Regional Trade Shows</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Multiple City Exhibitions</h3>
+                            <p class="text-gray-600 text-sm mb-3">Ongoing - Participating in regional shows across
+                                Chennai, Hyderabad, Ahmedabad</p>
+                            <p class="text-secondary font-semibold text-sm">Various Locations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Distributor Requirements</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    We're looking for motivated partners who share our commitment to quality and customer service
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Basic Requirements</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Business Experience</p>
+                                    <p class="text-gray-600 text-sm">Minimum 2 years in home décor, hardware, or related
+                                        industry</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Warehouse/Showroom Space</p>
+                                    <p class="text-gray-600 text-sm">Adequate storage space for inventory (minimum 500
+                                        sq ft)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Financial Capability</p>
+                                    <p class="text-gray-600 text-sm">Ability to maintain inventory worth ₹5-10 lakhs</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Business Registration</p>
+                                    <p class="text-gray-600 text-sm">Valid GST registration and business licenses</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-checkbox-circle-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Sales Team</p>
+                                    <p class="text-gray-600 text-sm">Dedicated sales personnel for market coverage</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-br from-secondary/5 to-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Preferred Qualifications</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-star-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Existing Customer Network</p>
+                                    <p class="text-gray-600 text-sm">Established relationships with retailers,
+                                        architects, or designers</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-star-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Local Market Knowledge</p>
+                                    <p class="text-gray-600 text-sm">Understanding of regional preferences and
+                                        competition</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-star-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Distribution Network</p>
+                                    <p class="text-gray-600 text-sm">Own vehicles for delivery within the territory</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-star-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Marketing Capability</p>
+                                    <p class="text-gray-600 text-sm">Willingness to invest in local marketing and
+                                        promotions</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-star-fill text-secondary text-2xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Growth Mindset</p>
+                                    <p class="text-gray-600 text-sm">Commitment to achieving monthly sales targets</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Process -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Simple Application Process</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-3xl font-bold">1</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Submit Application</h3>
+                        <p class="text-gray-600 text-sm">Fill out the distributor application form with your business
+                            details</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-3xl font-bold">2</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Initial Screening</h3>
+                        <p class="text-gray-600 text-sm">Our team reviews your application and contacts you within 3
+                            business days</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-3xl font-bold">3</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Meeting & Verification</h3>
+                        <p class="text-gray-600 text-sm">In-person or virtual meeting to discuss terms and verify
+                            credentials</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-3xl font-bold">4</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Onboarding & Launch</h3>
+                        <p class="text-gray-600 text-sm">Sign agreement, receive training, and start your successful
+                            partnership</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section id="application-form" class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Apply to Become a Distributor</h2>
+                <p class="text-center text-gray-600 mb-12">
+                    Fill out the form below and our team will get back to you within 3 business days
+                </p>
+                <form class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                            <input type="text" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                                placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                                placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                            <input type="tel" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                                placeholder="+91 98765 43210">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Company/Business Name *</label>
+                            <input type="text" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                                placeholder="Your Business Name">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">City *</label>
+                            <input type="text" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                                placeholder="Your City">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">State *</label>
+                            <select required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
+                                <option value="">Select State</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Business Experience (Years) *</label>
+                            <select required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
+                                <option value="">Select Experience</option>
+                                <option value="0-2">0-2 Years</option>
+                                <option value="2-5">2-5 Years</option>
+                                <option value="5-10">5-10 Years</option>
+                                <option value="10+">10+ Years</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Current Business Type *</label>
+                            <select required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
+                                <option value="">Select Type</option>
+                                <option value="Retailer">Retailer</option>
+                                <option value="Wholesaler">Wholesaler</option>
+                                <option value="Distributor">Distributor</option>
+                                <option value="New Business">Starting New Business</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Warehouse/Showroom Area (sq ft) *</label>
+                        <input type="text" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                            placeholder="e.g., 1000 sq ft">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Estimated Monthly Investment Capacity
+                            *</label>
+                        <select required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
+                            <option value="">Select Range</option>
+                            <option value="5-10">₹5-10 Lakhs</option>
+                            <option value="10-20">₹10-20 Lakhs</option>
+                            <option value="20-50">₹20-50 Lakhs</option>
+                            <option value="50+">₹50+ Lakhs</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">GST Number</label>
+                        <input type="text"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                            placeholder="Enter your GST number (if available)">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Additional Information</label>
+                        <textarea rows="4"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
+                            placeholder="Tell us about your business, existing customer base, or any questions you have..."></textarea>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="flex items-start">
+                            <input type="checkbox" required class="mt-1 mr-3">
+                            <span class="text-gray-600 text-sm">I agree to the terms and conditions and authorize
+                                Kohinoor to contact me regarding this distributorship application.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary/90 transition">
+                        Submit Application
+                    </button>
+
+                    <p class="text-center text-gray-600 text-sm mt-6">
+                        Or call us directly at <a href="tel:+919821339373" class="text-secondary font-semibold">+91
+                            98213 39373</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary flex items-center">
+                            <i class="ri-question-line text-secondary mr-3"></i>
+                            What is the minimum investment required?
+                        </h3>
+                        <p class="text-gray-600 pl-10">
+                            The minimum investment typically ranges from ₹5-10 lakhs depending on the territory size and
+                            market potential. This covers initial inventory, display materials, and working capital.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary flex items-center">
+                            <i class="ri-question-line text-secondary mr-3"></i>
+                            How long does the application process take?
+                        </h3>
+                        <p class="text-gray-600 pl-10">
+                            We typically review applications within 3 business days. The complete onboarding process,
+                            including verification and training, usually takes 2-3 weeks.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary flex items-center">
+                            <i class="ri-question-line text-secondary mr-3"></i>
+                            Do you provide exclusive territory rights?
+                        </h3>
+                        <p class="text-gray-600 pl-10">
+                            Yes, we provide exclusive territory rights to qualified distributors based on their
+                            investment capacity and market coverage plan. This ensures healthy business growth without
+                            internal competition.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary flex items-center">
+                            <i class="ri-question-line text-secondary mr-3"></i>
+                            What kind of training and support do you provide?
+                        </h3>
+                        <p class="text-gray-600 pl-10">
+                            We provide comprehensive product training, sales techniques workshops, marketing materials,
+                            product catalogs, display samples, and ongoing support from a dedicated relationship
+                            manager.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary flex items-center">
+                            <i class="ri-question-line text-secondary mr-3"></i>
+                            What are the payment terms?
+                        </h3>
+                        <p class="text-gray-600 pl-10">
+                            Payment terms are discussed during the onboarding process and are typically based on your
+                            business profile and order volume. We offer flexible credit terms to established partners.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary flex items-center">
+                            <i class="ri-question-line text-secondary mr-3"></i>
+                            Can I distribute other brands alongside Kohinoor?
+                        </h3>
+                        <p class="text-gray-600 pl-10">
+                            While we prefer dedicated focus on Kohinoor products, you can carry complementary product
+                            lines that don't directly compete with our curtain accessories range. This is discussed
+                            case-by-case.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Success Story?</h2>
+                <p class="text-lg mb-8">Join 150+ successful distributors across India and build a profitable business
+                    with Kohinoor's premium curtain accessories</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#application-form"
+                        class="bg-secondary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary/90 transition">
+                        Apply Now
+                    </a>
+                    <a href="tel:+919821339373"
+                        class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition">
+                        <i class="ri-phone-line mr-2"></i>Call +91 98213 39373
+                    </a>
+                </div>
+                <p class="text-sm mt-6 opacity-90">
+                    Questions? Email us at <a href="mailto:info@kohinoorindia.org"
+                        class="underline">info@kohinoorindia.org</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <a
+              href="index.html"
+              class="flex-shrink-0 items-center justify-center"
+            >
+              <img
+                src="./icons/kohinoor-logo.png"
+                alt="Kohinoor Logo"
+                class="w-40"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Transform your windows with our premium curtain accessories.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/KohinoorIndia.org/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kohinoor_india_org/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="index.html" class="text-gray-400 hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-gray-400 hover:text-white"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+919821339373"
+                  class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" class="text-gray-400 hover:text-white"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#review"
+                  class="text-gray-400 hover:text-white"
+                  >Review</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Products</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="Tracks.html" class="text-gray-400 hover:text-white"
+                  >Imp High Grade Aluminium Tracks</a
+                >
+              </li>
+              <li>
+                <a href="Finials.html" class="text-gray-400 hover:text-white"
+                  >Imp Finials</a
+                >
+              </li>
+              <li>
+                <a href="Tassels.html" class="text-gray-400 hover:text-white"
+                  >Imp Tassels</a
+                >
+              </li>
+              <li>
+                <a href="Pipes.html" class="text-gray-400 hover:text-white"
+                  >Imp Steel Pipes and Rods</a
+                >
+              </li>
+              <li>
+                <a
+                  href="CurtainAccessory.html"
+                  class="text-gray-400 hover:text-white"
+                  >Imp Curtain Accessory</a
+                >
+              </li>
+              <li>
+                <a href="TieBack.html" class="text-gray-400 hover:text-white"
+                  >Imp Tie Backs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-400">
+                <i class="ri-map-pin-line mr-3"></i>
+                <span
+                  >1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan,
+                  Chincholi Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
+                  India.</span
+                >
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-phone-line mr-3"></i>
+                <span>+91 98213 39373</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-time-line mr-3"></i>
+                <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-wrap justify-between items-center">
+            <p class="text-gray-400">
+              &copy; 2025 Kohinoor All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating contact buttons -->
+    <a
+      href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Curtain%20Accessories%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
+      class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+      target="_blank"
+    >
+      <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <a
+      href="tel:+919821339373"
+      class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+    >
+      <i class="ri-phone-line"></i>
+    </a>
+
+    <script>
+      // Mobile menu functionality
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuItems = mobileMenu.querySelectorAll("a");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Category filter functionality (basic example)
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(
+          'button[class*="px-4 py-2"]'
+        );
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("bg-white", "shadow-md");
+              btn.classList.add("hover:bg-white", "hover:shadow-md");
+            });
+
+            // Add active class to clicked button
+            this.classList.add("bg-white", "shadow-md");
+            this.classList.remove("hover:bg-white", "hover:shadow-md");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
