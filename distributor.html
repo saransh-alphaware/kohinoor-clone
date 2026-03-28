@@ -31,6 +31,12 @@
         },
       };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+        emailjs.init("e0bs11i3EYBT5dX7G");
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -677,13 +683,13 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
-                            <input type="text" required
+                            <input type="text" name="full_name" required
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                                 placeholder="Enter your full name">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
-                            <input type="email" required
+                            <input type="email" name="email" required
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                                 placeholder="your@email.com">
                         </div>
@@ -692,13 +698,13 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
-                            <input type="tel" required
+                            <input type="tel" name="phone" required
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                                 placeholder="+91 98765 43210">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">Company/Business Name *</label>
-                            <input type="text" required
+                            <input type="text" name="business_name" required
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                                 placeholder="Your Business Name">
                         </div>
@@ -707,13 +713,14 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">City *</label>
-                            <input type="text" required
+                            <input type="text" name="city" required
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                                 placeholder="Your City">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">State *</label>
                             <select required
+                                name="state"
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
                                 <option value="">Select State</option>
                                 <option value="Maharashtra">Maharashtra</option>
@@ -733,6 +740,7 @@
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">Business Experience (Years) *</label>
                             <select required
+                                name="experience"
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
                                 <option value="">Select Experience</option>
                                 <option value="0-2">0-2 Years</option>
@@ -744,6 +752,7 @@
                         <div>
                             <label class="block text-gray-700 font-semibold mb-2">Current Business Type *</label>
                             <select required
+                                name="business_type"
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
                                 <option value="">Select Type</option>
                                 <option value="Retailer">Retailer</option>
@@ -758,6 +767,7 @@
                     <div class="mb-6">
                         <label class="block text-gray-700 font-semibold mb-2">Warehouse/Showroom Area (sq ft) *</label>
                         <input type="text" required
+                            name="warehouse_area"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                             placeholder="e.g., 1000 sq ft">
                     </div>
@@ -766,6 +776,7 @@
                         <label class="block text-gray-700 font-semibold mb-2">Estimated Monthly Investment Capacity
                             *</label>
                         <select required
+                            name="investment"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary">
                             <option value="">Select Range</option>
                             <option value="5-10">₹5-10 Lakhs</option>
@@ -778,6 +789,7 @@
                     <div class="mb-6">
                         <label class="block text-gray-700 font-semibold mb-2">GST Number</label>
                         <input type="text"
+                            name="gst"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                             placeholder="Enter your GST number (if available)">
                     </div>
@@ -785,6 +797,7 @@
                     <div class="mb-6">
                         <label class="block text-gray-700 font-semibold mb-2">Additional Information</label>
                         <textarea rows="4"
+                            name="message"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                             placeholder="Tell us about your business, existing customer base, or any questions you have..."></textarea>
                     </div>
@@ -1100,6 +1113,36 @@
           });
         });
       });
+
+
+    const form = document.querySelector("#application-form form");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector("button[type='submit']");
+        submitBtn.innerText = "Submitting...";
+        submitBtn.disabled = true;
+
+        emailjs.sendForm(
+        "service_bxbuf7y",
+        "template_ej2rmhy",
+        this
+        )
+        .then(() => {
+        alert("Application submitted successfully!");
+        form.reset();
+        })
+        .catch((error) => {
+        alert("Something went wrong. Please try again.");
+        console.error(error);
+        })
+        .finally(() => {
+        submitBtn.innerText = "Submit Application";
+        submitBtn.disabled = false;
+        });
+    });
+
     </script>
   </body>
 </html>
