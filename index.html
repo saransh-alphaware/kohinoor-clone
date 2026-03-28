@@ -70,7 +70,20 @@
       visibility: hidden;
       transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
     }
+  .rotate-video {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    width: 100vh;
+    height: 100vw;
+    object-fit: cover;
+  }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("e0bs11i3EYBT5dX7G");
+    })();
+  </script>
 </head>
 
 <body class="bg-white min-h-screen">
@@ -280,7 +293,15 @@
         </div>
       </div>
     </section>
-
+    <div class="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden">
+      <iframe
+        class="w-full h-full rotate-video"
+        src="https://www.youtube.com/embed/DSjv76ETlgw?autoplay=1&mute=1&rel=0&modestbranding=1"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>
     <section id="products" class="py-16">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center mb-8">
@@ -2249,36 +2270,37 @@
         <p class="text-gray-600 mt-2">We'd love to hear from you! Send us a message below.</p>
       </div>
 
-      <form class="space-y-4">
-        <div>
-          <label class="block text-gray-700 font-medium">Name</label>
-          <input type="text" placeholder="Your Name"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none">
-        </div>
+      <form id="contact-form" class="space-y-4">
+    <div>
+      <label class="block text-gray-700 font-medium">Name</label>
+      <input type="text" name="name" placeholder="Your Name"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
+    </div>
 
-        <div>
-          <label class="block text-gray-700 font-medium">Mobile No.</label>
-          <input type="number" placeholder="Your Mobile No." min="1000000000" max="9999999999"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none no-arrows">
-        </div>
+    <div>
+      <label class="block text-gray-700 font-medium">Mobile No.</label>
+      <input type="tel" name="mobile" placeholder="Your Mobile No."
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
+    </div>
 
-        <div>
-          <label class="block text-gray-700 font-medium">Email</label>
-          <input type="email" placeholder="Your Email"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none">
-        </div>
+    <div>
+      <label class="block text-gray-700 font-medium">Email</label>
+      <input type="email" name="email" placeholder="Your Email"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
+    </div>
 
-        <div>
-          <label class="block text-gray-700 font-medium">Message</label>
-          <textarea rows="4" placeholder="Your Message"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none"></textarea>
-        </div>
+    <div>
+      <label class="block text-gray-700 font-medium">Message</label>
+      <textarea name="message" rows="4" placeholder="Your Message"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required></textarea>
+    </div>
 
-        <button type="submit"
-          class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
-          Send Message
-        </button>
-      </form>
+    <button type="submit"
+      class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
+      Send Message
+    </button>
+  </form>
+</section>
     </section>
     <section id="review" class="py-16 bg-gray-50">
       <div class="container mx-auto px-4 max-w-7xl">
@@ -2716,6 +2738,24 @@
     menuItems.forEach((item) => {
       item.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
+      });
+    });
+
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "service_bxbuf7y",
+        "template_vwzak4e",
+        this
+      ).then(function() {
+        alert("Message sent successfully!");
+        form.reset();
+      }, function(error) {
+        alert("Failed to send message. Try again.");
+        console.log(error);
       });
     });
   </script>
