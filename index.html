@@ -71,12 +71,22 @@
       transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
     }
   .rotate-video {
-    transform: rotate(-90deg);
     transform-origin: center;
     width: 100vh;
     height: 100vw;
     object-fit: cover;
   }
+    .video-strip {
+      width: 100%;
+    }
+ 
+    .video-strip video {
+      width: 100%;
+      height: auto;   /* natural height based on video's own aspect ratio */
+      display: block;
+    }
+
+    
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
@@ -293,14 +303,11 @@
         </div>
       </div>
     </section>
-    <div class="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden">
-      <iframe
-        class="w-full h-full rotate-video"
-        src="https://www.youtube.com/embed/DSjv76ETlgw?autoplay=1&mute=1&rel=0&modestbranding=1"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
+    <div class="video-strip">
+      <video src="video/video2.mp4" autoplay loop muted playsinline
+        disablepictureinpicture
+        controlslist="nodownload nofullscreen noremoteplayback">
+      </video>
     </div>
     <section id="products" class="py-16">
       <div class="container mx-auto px-4">
@@ -2756,7 +2763,7 @@
       item.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
       });
-    });
+    });  
 
     const form = document.getElementById("contact-form");
 
