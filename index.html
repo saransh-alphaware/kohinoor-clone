@@ -143,7 +143,12 @@
         </li>
       </ul>
       <!-- Contact Button -->
-      <a href="tel:+919821339373"
+      <!-- <a href="tel:+919821339373"
+        class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Contact Us
+      </a> -->
+      <a href="#"
+        data-contact-modal="open"
         class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
         Contact Us
       </a>
@@ -165,6 +170,14 @@
       <a href="#catalogue" class="block hover:text-blue-400 transition">Catalogue</a>
       <!-- <a href="#services" class="block hover:text-blue-400 transition">Services</a> -->
       <a href="#review" class="block hover:text-blue-400 transition">Review</a>
+      <div class="pr-4 pb-2">
+        <a href="#"
+          data-contact-modal="open"
+          class="block w-full text-center bg-blue-500 text-white font-semibold
+                  py-2.5 rounded-lg hover:bg-blue-600 transition">
+          Contact Us
+        </a>
+      </div>
     </div>
   </header>
   <main>
@@ -2781,6 +2794,12 @@
         alert("Failed to send message. Try again.");
         console.log(error);
       });
+    });
+  </script>
+  <script src="contact-modal.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ContactModal.init();
     });
   </script>
 </body>

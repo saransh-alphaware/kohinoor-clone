@@ -31,6 +31,12 @@
         },
       };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("e0bs11i3EYBT5dX7G");
+      })();
+    </script>
   </head>
 
   <body class="bg-white min-h-screen font-poppins">
@@ -113,8 +119,13 @@
         </ul>
 
         <!-- Contact Button -->
+        <!-- <a href="tel:+919821339373"
+        class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Contact Us
+      </a> -->
         <a
-          href="tel:+919821339373"
+          href="#"
+          data-contact-modal="open"
           class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
         >
           Contact Us
@@ -157,6 +168,15 @@
         <a href="#catalogue" class="block hover:text-blue-400 transition"
           >Catalogue</a
         >
+        <div class="pr-4 pb-2">
+          <a
+            href="#"
+            data-contact-modal="open"
+            class="block w-full text-center bg-blue-500 text-white font-semibold py-2.5 rounded-lg hover:bg-blue-600 transition"
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
     </header>
 
@@ -779,6 +799,12 @@
         item.addEventListener("click", () => {
           mobileMenu.classList.add("hidden");
         });
+      });
+    </script>
+    <script src="contact-modal.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        ContactModal.init();
       });
     </script>
   </body>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -41,6 +41,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("e0bs11i3EYBT5dX7G");
+      })();
+    </script>
   </head>
 
   <body class="bg-white min-h-screen">
@@ -80,16 +86,32 @@
             >
           </li>
           <li>
-              <a href="blog.html" class="text-white font-semibold hover:text-blue-400 transition">Blog</a>
+            <a
+              href="blog.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Blog</a
+            >
           </li>
           <li>
-              <a href="newCollection.html" class="text-white font-semibold hover:text-blue-400 transition">New Collection</a>
+            <a
+              href="newCollection.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >New Collection</a
+            >
           </li>
           <li>
-              <a href="awards.html" class="text-white font-semibold hover:text-blue-400 transition">Awards</a>
+            <a
+              href="awards.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Awards</a
+            >
           </li>
           <li>
-              <a href="distributor.html" class="text-white font-semibold hover:text-blue-400 transition">Become a Distributor</a>
+            <a
+              href="distributor.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Become a Distributor</a
+            >
           </li>
           <li>
             <a
@@ -100,8 +122,13 @@
           </li>
         </ul>
         <!-- Contact Button -->
+        <!-- <a href="tel:+919821339373"
+        class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Contact Us
+      </a> -->
         <a
-          href="tel:+919821339373"
+          href="#"
+          data-contact-modal="open"
           class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
         >
           Contact Us
@@ -127,13 +154,28 @@
           class="block hover:text-blue-400 transition"
           >Products</a
         >
-        <a href="blog.html" class="block hover:text-blue-400 transition">Blog</a>
-        <a href="newCollection.html" class="block hover:transition">New Collection</a>
+        <a href="blog.html" class="block hover:text-blue-400 transition"
+          >Blog</a
+        >
+        <a href="newCollection.html" class="block hover:transition"
+          >New Collection</a
+        >
         <a href="awards.html" class="block hover:transition">Awards</a>
-        <a href="distributor.html" class="block hover:transition">Become a Distributor</a>
+        <a href="distributor.html" class="block hover:transition"
+          >Become a Distributor</a
+        >
         <a href="index.html#review" class="block hover:text-blue-400 transition"
           >Review</a
         >
+        <div class="pr-4 pb-2">
+          <a
+            href="#"
+            data-contact-modal="open"
+            class="block w-full text-center bg-blue-500 text-white font-semibold py-2.5 rounded-lg hover:bg-blue-600 transition"
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
     </header>
 
@@ -4680,7 +4722,7 @@
       // Category filter functionality (basic example)
       document.addEventListener("DOMContentLoaded", function () {
         const filterButtons = document.querySelectorAll(
-          'button[class*="px-4 py-2"]'
+          'button[class*="px-4 py-2"]',
         );
 
         filterButtons.forEach((button) => {
@@ -4696,6 +4738,12 @@
             this.classList.remove("hover:bg-white", "hover:shadow-md");
           });
         });
+      });
+    </script>
+    <script src="contact-modal.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        ContactModal.init();
       });
     </script>
   </body>

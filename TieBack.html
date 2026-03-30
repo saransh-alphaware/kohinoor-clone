@@ -1,798 +1,1418 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./icons/kohinoor-logo.ico">
-  <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstaTIE.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#2C3E50",
-            secondary: "#E67E22",
-          },
-          fontFamily: {
-            poppins: ["Poppins", "sans-serif"],
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/kohinoor-logo.ico" />
+    <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstaTIE.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              secondary: "#E67E22",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
           },
         },
-      },
-    };
-  </script>
-</head>
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("e0bs11i3EYBT5dX7G");
+      })();
+    </script>
+  </head>
 
-<body class="bg-white min-h-screen font-poppins">
-  <!-- Header -->
-  <header
-    class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg">
-    <nav class="w-full flex items-center justify-between px-6 py-4">
-      <!-- Logo -->
-      <a href="#" class="flex-shrink-0">
-        <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-28" />
-      </a>
+  <body class="bg-white min-h-screen font-poppins">
+    <!-- Header -->
+    <header
+      class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
+    >
+      <nav class="w-full flex items-center justify-between px-6 py-4">
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0">
+          <img
+            src="./icons/kohinoor-logo.png"
+            alt="Kohinoor Logo"
+            class="w-28"
+          />
+        </a>
 
-      <!-- Desktop Navigation -->
-      <ul class="hidden md:flex items-center space-x-8">
-        <li>
-          <a href="index.html" class="text-white font-semibold hover:text-blue-400 transition">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="about.html" class="text-white font-semibold hover:text-blue-400 transition">
-            About Us
-          </a>
-        </li>
-        <li>
-            <a href="blog.html" class="text-white font-semibold hover:text-blue-400 transition">Blog</a>
-        </li>
-        <li>
-            <a href="newCollection.html" class="text-white font-semibold hover:text-blue-400 transition">New Collection</a>
-        </li>
-        <li>
-            <a href="awards.html" class="text-white font-semibold hover:text-blue-400 transition">Awards</a>
-        </li>
-        <li>
-            <a href="distributor.html" class="text-white font-semibold hover:text-blue-400 transition">Become a Distributor</a>
-        </li>
-        <li>
-          <a href="#products" class="text-white font-semibold hover:text-blue-400 transition">
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="#catalogue" class="text-white font-semibold hover:text-blue-400 transition">
-            Catalogue
-          </a>
-        </li>
-      </ul>
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="index.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="newCollection.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >New Collection</a
+            >
+          </li>
+          <li>
+            <a
+              href="awards.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Awards</a
+            >
+          </li>
+          <li>
+            <a
+              href="distributor.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Become a Distributor</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="#catalogue"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              Catalogue
+            </a>
+          </li>
+        </ul>
 
-      <!-- Contact Button -->
-      <a href="tel:+919821339373"
+        <!-- Contact Button -->
+        <!-- <a href="tel:+919821339373"
         class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
         Contact Us
-      </a>
-
-      <!-- Hamburger Menu Button -->
-      <button id="hamburger" class="md:hidden text-white text-2xl">
-        <i class="ri-menu-line"></i>
-      </button>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-      class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg">
-      <a href="index.html" class="block hover:text-blue-400 transition">Home</a>
-      <a href="about.html" class="block hover:text-blue-400 transition">About Us</a>
-      <a href="blog.html" class="block hover:text-blue-400 transition">Blog</a>
-      <a href="newCollection.html" class="block hover:text-blue-400 transition">New Collection</a>
-      <a href="awards.html" class="block hover:text-blue-400 transition">Awards</a>
-      <a href="distributor.html" class="block hover:text-blue-400 transition">Become a Distributor</a>
-      <a href="#products" class="block hover:text-blue-400 transition">Products</a>
-      <a href="#catalogue" class="block hover:text-blue-400 transition">Catalogue</a>
-    </div>
-  </header>
-
-  <main class="container mx-auto px-4 pt-32 pb-16">
-    <!-- Hero Section -->
-    <section class="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12 mb-16">
-      <div class="w-full md:w-2/3">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-          Imp Tie Back
-        </h1>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="mb-16">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 0.webp" alt="TIE BACK 0" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 1
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 1.webp" alt="TIE BACK 1" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 2
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 2.webp" alt="TIE BACK 2" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 3
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 3.webp" alt="TIE BACK 3" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 4
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 4.webp" alt="TIE BACK 4" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 5
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 5.webp" alt="TIE BACK 5" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 6
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 6.webp" alt="TIE BACK 6" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 7
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 7.webp" alt="TIE BACK 7" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 8
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 8.webp" alt="TIE BACK 8" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 9
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 9.webp" alt="TIE BACK 9" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 10
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 10.webp" alt="TIE BACK 10" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 11
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 11.webp" alt="TIE BACK 11" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 12
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 12.webp" alt="TIE BACK 12" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 12
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 13.webp" alt="TIE BACK 13" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 13
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 14.webp" alt="TIE BACK 14" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 14
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 15.webp" alt="TIE BACK 15" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 15
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 16.webp" alt="TIE BACK 16" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 16
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 17.webp" alt="TIE BACK 17" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 17
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 18.webp" alt="TIE BACK 18" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 18
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 19.webp" alt="TIE BACK 19" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 19
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 20.webp" alt="TIE BACK 20" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 20
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 21.webp" alt="TIE BACK 21" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 21
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 22.webp" alt="TIE BACK 22" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 22
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 23.webp" alt="TIE BACK 23" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 23
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 24.webp" alt="TIE BACK 24" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 24
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 25.webp" alt="TIE BACK 25" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 25
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 26.webp" alt="TIE BACK 26" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 26
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 27.webp" alt="TIE BACK 27" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 27
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 28.webp" alt="TIE BACK 28" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 28
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 29.webp" alt="TIE BACK 29" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 29
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 30.webp" alt="TIE BACK 30" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 30
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 31.webp" alt="TIE BACK 31" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 31
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 32.webp" alt="TIE BACK 32" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 32
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 33.webp" alt="TIE BACK 33" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 33
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 34.webp" alt="TIE BACK 34" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 34
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 35.webp" alt="TIE BACK 35" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 35
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 36.webp" alt="TIE BACK 36" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 36
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 37.webp" alt="TIE BACK 37" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 37
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 38.webp" alt="TIE BACK 38" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 38
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 39.webp" alt="TIE BACK 39" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 39
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 40.webp" alt="TIE BACK 40" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 40
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 41.webp" alt="TIE BACK 41" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 41
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 42.webp" alt="TIE BACK 42" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 42
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 43.webp" alt="TIE BACK 43" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 43
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 44.webp" alt="TIE BACK 44" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 44
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 45.webp" alt="TIE BACK 45" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 45
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 46.webp" alt="TIE BACK 46" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 46
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 47.webp" alt="TIE BACK 47" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 47
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 48.webp" alt="TIE BACK 48" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 48
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 49.webp" alt="TIE BACK 49" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 49
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 50.webp" alt="TIE BACK 50" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 50
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 51.webp" alt="TIE BACK 51" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 51
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 52.webp" alt="TIE BACK 52" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 52
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 53.webp" alt="TIE BACK 53" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 53
-            </h3>
-          </div>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1">
-          <img src="./images/TIE BACK/TIE BACK 54.webp" alt="TIE BACK 54" class="w-full h-48 object-contain mb-4" />
-          <div>
-            <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-              IMP TIE BACK 54
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="catalogue" class="text-white py-10">
-      <div class="container mx-auto px-4 text-center">
-        <a href="./pdf/Kohinoor Catalogue 2020-2021.pdf" download="Kohinoor Catalogue 2020-2021.pdf"
-          class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">
-          <i class="ri-download-line"></i>
-          Download Catalogue
+      </a> -->
+        <a
+          href="#"
+          data-contact-modal="open"
+          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
         </a>
-      </div>
-    </section>
 
-    <section id="products">
-      <div class="mb-8">
-        <h2 class="text-2xl font-bold text-gray-800">Related Products</h2>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-lg">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6">
-          <!-- Product Card 1 -->
-          <a class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
-            href="Tracks.html">
-            <img
-              src="./images/Tracks/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track.webp"
-              alt="Tracks" class="w-full h-48 object-contain mb-4" />
-            <div>
-              <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-                Imp High Grade Aluminium Tracks
-              </h3>
-            </div>
-          </a>
-          <a class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
-            href="Pipes.html">
-            <img src="./images/Pipes/round/round.webp" alt="Pipes" class="w-full h-48 object-contain mb-4" />
-            <div>
-              <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-                Imp Steel Pipes and Rods
-              </h3>
-            </div>
-          </a>
-          <a class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
-            href="TieBack.html">
-            <img src="./images/TIE BACK/TIE BACK 11.webp" alt="TIE BACK" class="w-full h-48 object-contain mb-4" />
-            <div>
-              <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-                Imp Tie Backs
-              </h3>
-            </div>
-          </a>
-          <a class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
-            href="Tassels.html">
-            <img src="./images/Tassels/Tassels3.webp" alt="Tassels" class="w-full h-48 object-contain mb-4" />
-            <div>
-              <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-                Imp Tassels
-              </h3>
-            </div>
-          </a>
-          <a class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
-            href="CurtainAccessory.html">
-            <img src="./images/Curtain Accessory/American Curtain Patti.webp" alt="American Curtain Patti"
-              class="w-full h-48 object-contain mb-4" />
-            <div>
-              <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-                Imp Curtain Accessory
-              </h3>
-            </div>
-          </a>
-          <a class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
-            href="Finials.html">
-            <img src="./images/Finials/Finials14.webp" alt="Finials" class="w-full h-48 object-contain mb-4" />
-            <div>
-              <h3 class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]">
-                Imp Finials
-              </h3>
-            </div>
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="md:hidden text-white text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
+      >
+        <a href="index.html" class="block hover:text-blue-400 transition"
+          >Home</a
+        >
+        <a href="about.html" class="block hover:text-blue-400 transition"
+          >About Us</a
+        >
+        <a href="blog.html" class="block hover:text-blue-400 transition"
+          >Blog</a
+        >
+        <a
+          href="newCollection.html"
+          class="block hover:text-blue-400 transition"
+          >New Collection</a
+        >
+        <a href="awards.html" class="block hover:text-blue-400 transition"
+          >Awards</a
+        >
+        <a href="distributor.html" class="block hover:text-blue-400 transition"
+          >Become a Distributor</a
+        >
+        <a href="#products" class="block hover:text-blue-400 transition"
+          >Products</a
+        >
+        <a href="#catalogue" class="block hover:text-blue-400 transition"
+          >Catalogue</a
+        >
+        <div class="pr-4 pb-2">
+          <a
+            href="#"
+            data-contact-modal="open"
+            class="block w-full text-center bg-blue-500 text-white font-semibold py-2.5 rounded-lg hover:bg-blue-600 transition"
+          >
+            Contact Us
           </a>
         </div>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <!-- Footer -->
-  <footer class="bg-primary text-white py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        <div>
-          <a href="#" class="flex-shrink-0 items-center justify-center">
-            <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-40" />
+    <main class="container mx-auto px-4 pt-32 pb-16">
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12 mb-16"
+      >
+        <div class="w-full md:w-2/3">
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
+          >
+            Imp Tie Back
+          </h1>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="mb-16">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+        >
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 0.webp"
+              alt="TIE BACK 0"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 1
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 1.webp"
+              alt="TIE BACK 1"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 2
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 2.webp"
+              alt="TIE BACK 2"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 3
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 3.webp"
+              alt="TIE BACK 3"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 4
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 4.webp"
+              alt="TIE BACK 4"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 5
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 5.webp"
+              alt="TIE BACK 5"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 6
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 6.webp"
+              alt="TIE BACK 6"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 7
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 7.webp"
+              alt="TIE BACK 7"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 8
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 8.webp"
+              alt="TIE BACK 8"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 9
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 9.webp"
+              alt="TIE BACK 9"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 10
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 10.webp"
+              alt="TIE BACK 10"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 11
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 11.webp"
+              alt="TIE BACK 11"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 12
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 12.webp"
+              alt="TIE BACK 12"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 12
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 13.webp"
+              alt="TIE BACK 13"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 13
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 14.webp"
+              alt="TIE BACK 14"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 14
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 15.webp"
+              alt="TIE BACK 15"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 15
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 16.webp"
+              alt="TIE BACK 16"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 16
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 17.webp"
+              alt="TIE BACK 17"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 17
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 18.webp"
+              alt="TIE BACK 18"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 18
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 19.webp"
+              alt="TIE BACK 19"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 19
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 20.webp"
+              alt="TIE BACK 20"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 20
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 21.webp"
+              alt="TIE BACK 21"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 21
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 22.webp"
+              alt="TIE BACK 22"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 22
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 23.webp"
+              alt="TIE BACK 23"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 23
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 24.webp"
+              alt="TIE BACK 24"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 24
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 25.webp"
+              alt="TIE BACK 25"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 25
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 26.webp"
+              alt="TIE BACK 26"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 26
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 27.webp"
+              alt="TIE BACK 27"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 27
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 28.webp"
+              alt="TIE BACK 28"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 28
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 29.webp"
+              alt="TIE BACK 29"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 29
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 30.webp"
+              alt="TIE BACK 30"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 30
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 31.webp"
+              alt="TIE BACK 31"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 31
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 32.webp"
+              alt="TIE BACK 32"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 32
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 33.webp"
+              alt="TIE BACK 33"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 33
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 34.webp"
+              alt="TIE BACK 34"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 34
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 35.webp"
+              alt="TIE BACK 35"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 35
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 36.webp"
+              alt="TIE BACK 36"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 36
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 37.webp"
+              alt="TIE BACK 37"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 37
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 38.webp"
+              alt="TIE BACK 38"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 38
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 39.webp"
+              alt="TIE BACK 39"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 39
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 40.webp"
+              alt="TIE BACK 40"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 40
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 41.webp"
+              alt="TIE BACK 41"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 41
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 42.webp"
+              alt="TIE BACK 42"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 42
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 43.webp"
+              alt="TIE BACK 43"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 43
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 44.webp"
+              alt="TIE BACK 44"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 44
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 45.webp"
+              alt="TIE BACK 45"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 45
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 46.webp"
+              alt="TIE BACK 46"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 46
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 47.webp"
+              alt="TIE BACK 47"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 47
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 48.webp"
+              alt="TIE BACK 48"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 48
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 49.webp"
+              alt="TIE BACK 49"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 49
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 50.webp"
+              alt="TIE BACK 50"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 50
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 51.webp"
+              alt="TIE BACK 51"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 51
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 52.webp"
+              alt="TIE BACK 52"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 52
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 53.webp"
+              alt="TIE BACK 53"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 53
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/TIE BACK/TIE BACK 54.webp"
+              alt="TIE BACK 54"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                IMP TIE BACK 54
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="catalogue" class="text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+          <a
+            href="./pdf/Kohinoor Catalogue 2020-2021.pdf"
+            download="Kohinoor Catalogue 2020-2021.pdf"
+            class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition"
+          >
+            <i class="ri-download-line"></i>
+            Download Catalogue
           </a>
-          <p class="text-gray-400 mb-6">
-            Transform your windows with our premium curtain accessories.
-          </p>
-          <div class="flex space-x-4">
-            <a href="https://www.facebook.com/KohinoorIndia.org/"
-              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
-              <i class="ri-facebook-fill"></i>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800">Related Products</h2>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6"
+          >
+            <!-- Product Card 1 -->
+            <a
+              class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+              href="Tracks.html"
+            >
+              <img
+                src="./images/Tracks/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                alt="Tracks"
+                class="w-full h-48 object-contain mb-4"
+              />
+              <div>
+                <h3
+                  class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+                >
+                  Imp High Grade Aluminium Tracks
+                </h3>
+              </div>
             </a>
-            <a href="https://www.instagram.com/kohinoor_india_org/"
-              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
-              <i class="ri-instagram-line"></i>
+            <a
+              class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+              href="Pipes.html"
+            >
+              <img
+                src="./images/Pipes/round/round.webp"
+                alt="Pipes"
+                class="w-full h-48 object-contain mb-4"
+              />
+              <div>
+                <h3
+                  class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+                >
+                  Imp Steel Pipes and Rods
+                </h3>
+              </div>
             </a>
-            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
-              <i class="ri-pinterest-line"></i>
+            <a
+              class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+              href="TieBack.html"
+            >
+              <img
+                src="./images/TIE BACK/TIE BACK 11.webp"
+                alt="TIE BACK"
+                class="w-full h-48 object-contain mb-4"
+              />
+              <div>
+                <h3
+                  class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+                >
+                  Imp Tie Backs
+                </h3>
+              </div>
+            </a>
+            <a
+              class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+              href="Tassels.html"
+            >
+              <img
+                src="./images/Tassels/Tassels3.webp"
+                alt="Tassels"
+                class="w-full h-48 object-contain mb-4"
+              />
+              <div>
+                <h3
+                  class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+                >
+                  Imp Tassels
+                </h3>
+              </div>
+            </a>
+            <a
+              class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+              href="CurtainAccessory.html"
+            >
+              <img
+                src="./images/Curtain Accessory/American Curtain Patti.webp"
+                alt="American Curtain Patti"
+                class="w-full h-48 object-contain mb-4"
+              />
+              <div>
+                <h3
+                  class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+                >
+                  Imp Curtain Accessory
+                </h3>
+              </div>
+            </a>
+            <a
+              class="bg-white border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+              href="Finials.html"
+            >
+              <img
+                src="./images/Finials/Finials14.webp"
+                alt="Finials"
+                class="w-full h-48 object-contain mb-4"
+              />
+              <div>
+                <h3
+                  class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+                >
+                  Imp Finials
+                </h3>
+              </div>
             </a>
           </div>
         </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
-          <ul class="space-y-4">
-            <li>
-              <a href="../index.html" class="text-gray-400 hover:text-white">Home</a>
-            </li>
-            <li>
-              <a href="../about.html" class="text-gray-400 hover:text-white">About Us</a>
-            </li>
-            <li>
-              <a href="#products" class="text-gray-400 hover:text-white">Products</a>
-            </li>
-            <li>
-              <a href="tel:+919821339373" class="text-gray-400 hover:text-white">Contact</a>
-            </li>
-          </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <a href="#" class="flex-shrink-0 items-center justify-center">
+              <img
+                src="./icons/kohinoor-logo.png"
+                alt="Kohinoor Logo"
+                class="w-40"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Transform your windows with our premium curtain accessories.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/KohinoorIndia.org/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kohinoor_india_org/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="../index.html" class="text-gray-400 hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="../about.html" class="text-gray-400 hover:text-white"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#products" class="text-gray-400 hover:text-white"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+919821339373"
+                  class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Products</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="Tracks.html" class="text-gray-400 hover:text-white"
+                  >Imp High Grade Aluminium Tracks</a
+                >
+              </li>
+              <li>
+                <a href="Finials.html" class="text-gray-400 hover:text-white"
+                  >Imp Finials</a
+                >
+              </li>
+              <li>
+                <a href="Tassels.html" class="text-gray-400 hover:text-white"
+                  >Imp Tassels</a
+                >
+              </li>
+              <li>
+                <a href="Pipes.html" class="text-gray-400 hover:text-white"
+                  >Imp Steel Pipes and Rods</a
+                >
+              </li>
+              <li>
+                <a
+                  href="CurtainAccessory.html"
+                  class="text-gray-400 hover:text-white"
+                  >Imp Curtain Accessory</a
+                >
+              </li>
+
+              <li>
+                <a href="TieBack.html" class="text-gray-400 hover:text-white"
+                  >Imp Tie Backs</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-400">
+                <i class="ri-map-pin-line mr-3"></i>
+                <span
+                  >1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan,
+                  Chincholi Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
+                  India.</span
+                >
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-phone-line mr-3"></i>
+                <span>+91 98213 39373</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-time-line mr-3"></i>
+                <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-6">Products</h3>
-          <ul class="space-y-4">
-            <li>
-              <a href="Tracks.html" class="text-gray-400 hover:text-white">Imp High Grade Aluminium Tracks</a>
-            </li>
-            <li>
-              <a href="Finials.html" class="text-gray-400 hover:text-white">Imp Finials</a>
-            </li>
-            <li>
-              <a href="Tassels.html" class="text-gray-400 hover:text-white">Imp Tassels</a>
-            </li>
-            <li>
-              <a href="Pipes.html" class="text-gray-400 hover:text-white">Imp Steel Pipes and Rods</a>
-            </li>
-            <li>
-              <a href="CurtainAccessory.html" class="text-gray-400 hover:text-white">Imp Curtain Accessory</a>
-            </li>
-
-            <li>
-              <a href="TieBack.html" class="text-gray-400 hover:text-white">Imp Tie Backs</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
-          <ul class="space-y-4">
-            <li class="flex items-center text-gray-400">
-              <i class="ri-map-pin-line mr-3"></i>
-              <span>1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan, Chincholi
-                Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
-                India.</span>
-            </li>
-            <li class="flex items-center text-gray-400">
-              <i class="ri-phone-line mr-3"></i>
-              <span>+91 98213 39373</span>
-            </li>
-            <li class="flex items-center text-gray-400">
-              <i class="ri-time-line mr-3"></i>
-              <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
-            </li>
-
-          </ul>
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-wrap justify-between items-center">
+            <p class="text-gray-400">
+              &copy; 2025 Kohinoor All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="border-t border-gray-800 mt-12 pt-8">
-        <div class="flex flex-wrap justify-between items-center">
-          <p class="text-gray-400">
-            &copy; 2025 Kohinoor All rights reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Floating contact buttons -->
-  <a href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Tie%20Back%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
-    class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
-    target="_blank">
-    <i class="ri-whatsapp-line"></i>
-  </a>
+    <!-- Floating contact buttons -->
+    <a
+      href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Tie%20Back%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
+      class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+      target="_blank"
+    >
+      <i class="ri-whatsapp-line"></i>
+    </a>
 
-  <a href="tel:+919821339373"
-    class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200">
-    <i class="ri-phone-line"></i>
-  </a>
+    <a
+      href="tel:+919821339373"
+      class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+    >
+      <i class="ri-phone-line"></i>
+    </a>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get all links with hash
-      const links = document.querySelectorAll('a[href^="#"]');
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all links with hash
+        const links = document.querySelectorAll('a[href^="#"]');
 
-      // Add smooth scroll to all links
-      links.forEach((link) => {
-        link.addEventListener("click", function (e) {
-          // Prevent default anchor click behavior
-          e.preventDefault();
+        // Add smooth scroll to all links
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            // Prevent default anchor click behavior
+            e.preventDefault();
 
-          // Get the target element
-          const targetId = this.getAttribute("href");
-          const targetElement = document.querySelector(targetId);
+            // Get the target element
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
 
-          if (targetElement) {
-            // Calculate header height to offset the scroll position
-            const headerHeight =
-              document.querySelector("header").offsetHeight + 16;
+            if (targetElement) {
+              // Calculate header height to offset the scroll position
+              const headerHeight =
+                document.querySelector("header").offsetHeight + 16;
 
-            // Get position of the target
-            const targetPosition =
-              targetElement.getBoundingClientRect().top + window.pageYOffset;
+              // Get position of the target
+              const targetPosition =
+                targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-            // Scroll smoothly to target with header offset
-            window.scrollTo({
-              top: targetPosition - headerHeight,
-              behavior: "smooth",
-            });
-          }
+              // Scroll smoothly to target with header offset
+              window.scrollTo({
+                top: targetPosition - headerHeight,
+                behavior: "smooth",
+              });
+            }
+          });
         });
       });
-    });
 
-    const hamburger = document.getElementById("hamburger");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuItems = mobileMenu.querySelectorAll("a"); // Select all menu links
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuItems = mobileMenu.querySelectorAll("a"); // Select all menu links
 
-    hamburger.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-
-    menuItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
-    });
-  </script>
-</body>
 
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+    <script src="contact-modal.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        ContactModal.init();
+      });
+    </script>
+  </body>
 </html>
