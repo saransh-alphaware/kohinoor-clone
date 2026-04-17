@@ -70,27 +70,28 @@
       visibility: hidden;
       transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
     }
-  .rotate-video {
-    transform-origin: center;
-    width: 100vh;
-    height: 100vw;
-    object-fit: cover;
-  }
+
+    .rotate-video {
+      transform-origin: center;
+      width: 100vh;
+      height: 100vw;
+      object-fit: cover;
+    }
+
     .video-strip {
       width: 100%;
     }
- 
+
     .video-strip video {
       width: 100%;
-      height: auto;   /* natural height based on video's own aspect ratio */
+      height: auto;
+      /* natural height based on video's own aspect ratio */
       display: block;
     }
-
-    
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
-    (function(){
+    (function () {
       emailjs.init("e0bs11i3EYBT5dX7G");
     })();
   </script>
@@ -118,28 +119,31 @@
           <a href="#home" class="text-white font-semibold hover:text-blue-400 transition">Home</a>
         </li>
         <li>
+          <a href="#products" class="text-white font-semibold hover:text-blue-400 transition">Products</a>
+        </li>
+        <li>
+          <a href="newCollection.html" class="text-white font-semibold hover:text-blue-400 transition">New
+            Collection</a>
+        </li>
+        <li>
           <a href="about.html" class="text-white font-semibold hover:text-blue-400 transition">About Us</a>
         </li>
+
         <li>
-          <a href="blog.html" class="text-white font-semibold hover:text-blue-400 transition">Blog</a>
-        </li>
-        <li>
-          <a href="newCollection.html" class="text-white font-semibold hover:text-blue-400 transition">New Collection</a>
+          <a href="distributor.html" class="text-white font-semibold hover:text-blue-400 transition">Become a
+            Distributor</a>
         </li>
         <li>
           <a href="awards.html" class="text-white font-semibold hover:text-blue-400 transition">Awards</a>
         </li>
         <li>
-          <a href="distributor.html" class="text-white font-semibold hover:text-blue-400 transition">Become a Distributor</a>
-        </li>
-        <li>
-          <a href="#products" class="text-white font-semibold hover:text-blue-400 transition">Products</a>
+          <a href="#review" class="text-white font-semibold hover:text-blue-400 transition">Review</a>
         </li>
         <li>
           <a href="#catalogue" class="text-white font-semibold hover:text-blue-400 transition">Catalogue</a>
         </li>
         <li>
-          <a href="#review" class="text-white font-semibold hover:text-blue-400 transition">Review</a>
+          <a href="blog.html" class="text-white font-semibold hover:text-blue-400 transition">Blog</a>
         </li>
       </ul>
       <!-- Contact Button -->
@@ -147,8 +151,7 @@
         class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
         Contact Us
       </a> -->
-      <a href="#"
-        data-contact-modal="open"
+      <a href="#" data-contact-modal="open"
         class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
         Contact Us
       </a>
@@ -161,19 +164,16 @@
     <div id="mobile-menu"
       class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg">
       <a href="#home" class="block hover:text-blue-400 transition">Home</a>
-      <a href="about.html" class="block hover:text-blue-400 transition">About Us</a>
-      <a href="blog.html" class="block hover:text-blue-400 transition">Blog</a>
-      <a href="newCollection.html" class="block hover:text-blue-400 transition">New Collection</a>
-      <a href="awards.html" class="block hover:text-blue-400 transition">Awards</a>
-      <a href="distributor.html" class="block hover:text-blue-400 transition">Become a Distributor</a>
       <a href="#products" class="block hover:text-blue-400 transition">Products</a>
-      <a href="#catalogue" class="block hover:text-blue-400 transition">Catalogue</a>
-      <!-- <a href="#services" class="block hover:text-blue-400 transition">Services</a> -->
+      <a href="newCollection.html" class="block hover:text-blue-400 transition">New Collection</a>
+      <a href="about.html" class="block hover:text-blue-400 transition">About Us</a>
+      <a href="distributor.html" class="block hover:text-blue-400 transition">Become a Distributor</a>
+      <a href="awards.html" class="block hover:text-blue-400 transition">Awards</a>
       <a href="#review" class="block hover:text-blue-400 transition">Review</a>
+      <a href="#catalogue" class="block hover:text-blue-400 transition">Catalogue</a>
+      <a href="blog.html" class="block hover:text-blue-400 transition">Blog</a>
       <div class="pr-4 pb-2">
-        <a href="#"
-          data-contact-modal="open"
-          class="block w-full text-center bg-blue-500 text-white font-semibold
+        <a href="#" data-contact-modal="open" class="block w-full text-center bg-blue-500 text-white font-semibold
                   py-2.5 rounded-lg hover:bg-blue-600 transition">
           Contact Us
         </a>
@@ -317,8 +317,7 @@
       </div>
     </section>
     <div class="video-strip">
-      <video src="video/video2.mp4" autoplay loop muted playsinline
-        disablepictureinpicture
+      <video src="video/video2.mp4" autoplay loop muted playsinline disablepictureinpicture
         controlslist="nodownload nofullscreen noremoteplayback">
       </video>
     </div>
@@ -431,8 +430,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track.webp"
-                      alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track"
-                      loading="lazy"
+                      alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track" loading="lazy"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1004-flexible-track-ivory-electro-coating-hospital-track.html">
@@ -452,8 +450,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1005 Flexible Track Ivory Electro Coating Hospital Track/Imp 1005 Flexible Track Ivory Electro Coating Hospital Track.webp"
-                      alt="Imp 1005 Flexible Track Ivory Electro Coating Hospital Track"
-                      loading="lazy"
+                      alt="Imp 1005 Flexible Track Ivory Electro Coating Hospital Track" loading="lazy"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1005-flexible-track-ivory-electro-coating-hospital-track.html">
@@ -473,8 +470,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1006 Track White Electro Coating/Imp 1006 Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp 1006 Track White Electro Coating" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1006 Track White Electro Coating"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1006-track-white-electro-coating.html">
                       Quick View
@@ -492,8 +489,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1007 Rop Track White Electro Coating/Imp 1007 Rop Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp 1007 Rop Track White Electro Coating" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1007 Rop Track White Electro Coating"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1007-rope-track-white-electro-coating.html">
                       Quick View
@@ -511,8 +508,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1008 Track White Electro Coating/Imp 1008 Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp 1008 Track White Electro Coating" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1008 Track White Electro Coating"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1008-track-white-electro-coating.html">
                       Quick View
@@ -530,8 +527,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1009 PVC Electro Coating White/Imp 1009 PVC Electro Coating White.webp"
-                      loading="lazy"
-                      alt="Imp 1009 PVC Electro Coating White" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1009 PVC Electro Coating White"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1009-pvc-electro-coating-white.html">
                       Quick View
@@ -549,8 +546,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1010 Track Ivory Electro Coating/Imp 1010 Track Ivory Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp 1010 Track Ivory Electro Coating" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1010 Track Ivory Electro Coating"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1010-track-ivory-electro-coating.html">
                       Quick View
@@ -568,8 +565,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1011 Track Ivory Electro Coating/Imp 1011 Track Ivory Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp 1011 Track Ivory Electro Coating" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1011 Track Ivory Electro Coating"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1011-track-ivory-electro-coating.html">
                       Quick View
@@ -587,8 +584,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1012 PVC Electro Coating White/Imp 1012 PVC Electro Coating White.webp"
-                      loading="lazy"
-                      alt="Imp 1012 PVC Electro Coating White" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1012 PVC Electro Coating White"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1012-pvc-electro-coating-white.html">
                       Quick View
@@ -606,8 +603,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1013 PVC Electro Coating White/Imp 1013 PVC Electro Coating White.webp"
-                      loading="lazy"
-                      alt="Imp 1013 PVC Electro Coating White" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1013 PVC Electro Coating White"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1013-pvc-electro-coating-white.html">
                       Quick View
@@ -625,8 +622,8 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1014 Electro Plating Rose Gold/Imp 1014 Electro Plating Rose Gold.webp"
-                      loading="lazy"
-                      alt="Imp 1014 Electro Plating Rose Gold" class="w-full h-60 object-contain bg-backColor" />
+                      loading="lazy" alt="Imp 1014 Electro Plating Rose Gold"
+                      class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1014-electro-plating-rose-gold.html">
                       Quick View
@@ -644,8 +641,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp 1015 Roman Track White Electro Coating/Imp 1015 Roman Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp 1015 Roman Track White Electro Coating"
+                      loading="lazy" alt="Imp 1015 Roman Track White Electro Coating"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-1015-roman-track-white-electro-coating.html">
@@ -664,8 +660,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp Venus Roman Track White Without Voice Electro Coating/Imp Venus Roman Track White Without Voice Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp Venus Roman Track White Without Voice Electro Coating"
+                      loading="lazy" alt="Imp Venus Roman Track White Without Voice Electro Coating"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-venus-roman-track-white-without-voice-electro-coating.html">
@@ -685,8 +680,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp Three Way Manual Track White Electro Coating/Imp Three Way Manual Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp Three Way Manual Track White Electro Coating"
+                      loading="lazy" alt="Imp Three Way Manual Track White Electro Coating"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-three-way-manual-track-white-electro-coating.html">
@@ -705,8 +699,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp Three Way Rope Track White Electro Coating/Imp Three Way Rope Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp Three Way Rope Track White Electro Coating"
+                      loading="lazy" alt="Imp Three Way Rope Track White Electro Coating"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-three-way-rope-track-white-electro-coating.html">
@@ -725,8 +718,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp Four Way Manual Track White Electro Coating/Imp Four Way Manual Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp Four Way Manual Track White Electro Coating"
+                      loading="lazy" alt="Imp Four Way Manual Track White Electro Coating"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-four-way-manual-track-white-electro-coating.html">
@@ -745,8 +737,7 @@
                   <div class="relative">
                     <img
                       src="./images/Tracks/Imp Four Way Rope Track White Electro Coating/Imp Four Way Rope Track White Electro Coating.webp"
-                      loading="lazy"
-                      alt="Imp Four Way Rope Track White Electro Coating"
+                      loading="lazy" alt="Imp Four Way Rope Track White Electro Coating"
                       class="w-full h-60 object-contain bg-backColor" />
                     <a class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
                       href="./Tracks/imp-four-way-rope-track-white-electro-coating.html">
@@ -885,7 +876,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/TIE BACK/TIE BACK 5.webp" loading="lazy"  alt="TIE BACK 5" class="w-full h-60 object-contain" />
+                    <img src="./images/TIE BACK/TIE BACK 5.webp" loading="lazy" alt="TIE BACK 5"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -899,7 +891,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/TIE BACK/TIE BACK 6.webp" loading="lazy" alt="TIE BACK 6" class="w-full h-60 object-contain" />
+                    <img src="./images/TIE BACK/TIE BACK 6.webp" loading="lazy" alt="TIE BACK 6"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -913,7 +906,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/TIE BACK/TIE BACK 7.webp" loading="lazy" alt="TIE BACK 7" class="w-full h-60 object-contain" />
+                    <img src="./images/TIE BACK/TIE BACK 7.webp" loading="lazy" alt="TIE BACK 7"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -927,7 +921,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/TIE BACK/TIE BACK 8.webp" loading="lazy" alt="TIE BACK 8" class="w-full h-60 object-contain" />
+                    <img src="./images/TIE BACK/TIE BACK 8.webp" loading="lazy" alt="TIE BACK 8"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -941,7 +936,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/TIE BACK/TIE BACK 9.webp" loading="lazy" alt="TIE BACK 9" class="w-full h-60 object-contain" />
+                    <img src="./images/TIE BACK/TIE BACK 9.webp" loading="lazy" alt="TIE BACK 9"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1091,7 +1087,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Pipes/oval/oval2.webp" loading="lazy" alt="Oval2" class="w-full h-60 object-contain" />
+                    <img src="./images/Pipes/oval/oval2.webp" loading="lazy" alt="Oval2"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1120,7 +1117,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Pipes/round/round2.webp" loading="lazy" alt="Round2" class="w-full h-60 object-contain" />
+                    <img src="./images/Pipes/round/round2.webp" loading="lazy" alt="Round2"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1235,7 +1233,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels6.webp" loading="lazy" alt="Tassels6" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels6.webp" loading="lazy" alt="Tassels6"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1249,7 +1248,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels7.webp" loading="lazy" alt="Tassels7" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels7.webp" loading="lazy" alt="Tassels7"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1263,7 +1263,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels8.webp" loading="lazy" alt="Tassels8" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels8.webp" loading="lazy" alt="Tassels8"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1277,7 +1278,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels9.webp" loading="lazy" alt="Tassels9" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels9.webp" loading="lazy" alt="Tassels9"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1291,7 +1293,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels10.webp" loading="lazy" alt="Tassels10" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels10.webp" loading="lazy" alt="Tassels10"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1305,7 +1308,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels11.webp" loading="lazy" alt="Tassels11" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels11.webp" loading="lazy" alt="Tassels11"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1319,7 +1323,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels12.webp" loading="lazy" alt="Tassels12" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels12.webp" loading="lazy" alt="Tassels12"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1333,7 +1338,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels13.webp" loading="lazy" alt="Tassels13" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels13.webp" loading="lazy" alt="Tassels13"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1347,7 +1353,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels14.webp" loading="lazy" alt="Tassels14" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels14.webp" loading="lazy" alt="Tassels14"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1361,7 +1368,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels15.webp" loading="lazy" alt="Tassels15" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels15.webp" loading="lazy" alt="Tassels15"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1375,7 +1383,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels16.webp" loading="lazy" alt="Tassels16" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels16.webp" loading="lazy" alt="Tassels16"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1389,7 +1398,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels17.webp" loading="lazy" alt="Tassels17" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels17.webp" loading="lazy" alt="Tassels17"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1403,7 +1413,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels18.webp" loading="lazy" alt="Tassels18" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels18.webp" loading="lazy" alt="Tassels18"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1417,7 +1428,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels19.webp" loading="lazy" alt="Tassels19" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels19.webp" loading="lazy" alt="Tassels19"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1431,7 +1443,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels20.webp" loading="lazy" alt="Tassels20" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels20.webp" loading="lazy" alt="Tassels20"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1445,7 +1458,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels21.webp" loading="lazy" alt="Tassels21" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels21.webp" loading="lazy" alt="Tassels21"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1459,7 +1473,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels22.webp" loading="lazy" alt="Tassels22" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels22.webp" loading="lazy" alt="Tassels22"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1473,7 +1488,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels23.webp" loading="lazy" alt="Tassels23" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels23.webp" loading="lazy" alt="Tassels23"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1487,7 +1503,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels24.webp" loading="lazy" alt="Tassels24" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels24.webp" loading="lazy" alt="Tassels24"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1501,7 +1518,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels25.webp" loading="lazy" alt="Tassels25" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels25.webp" loading="lazy" alt="Tassels25"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1515,7 +1533,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels26.webp" loading="lazy" alt="Tassels26" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels26.webp" loading="lazy" alt="Tassels26"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1529,7 +1548,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels27.webp" loading="lazy" alt="Tassels27" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels27.webp" loading="lazy" alt="Tassels27"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1543,7 +1563,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels28.webp" loading="lazy" alt="Tassels28" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels28.webp" loading="lazy" alt="Tassels28"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1557,7 +1578,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels29.webp" loading="lazy" alt="Tassels29" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels29.webp" loading="lazy" alt="Tassels29"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1571,7 +1593,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels30.webp" loading="lazy" alt="Tassels30" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels30.webp" loading="lazy" alt="Tassels30"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -1585,7 +1608,8 @@
               <li class="splide__slide py-2">
                 <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2">
                   <div class="relative">
-                    <img src="./images/Tassels/Tassels31.webp" loading="lazy" alt="Tassels31" class="w-full h-60 object-contain" />
+                    <img src="./images/Tassels/Tassels31.webp" loading="lazy" alt="Tassels31"
+                      class="w-full h-60 object-contain" />
                     <button
                       class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300">
                       Quick View
@@ -2308,36 +2332,35 @@
       </div>
 
       <form id="contact-form" class="space-y-4">
-    <div>
-      <label class="block text-gray-700 font-medium">Name</label>
-      <input type="text" name="name" placeholder="Your Name"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
-    </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Name</label>
+          <input type="text" name="name" placeholder="Your Name"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
+        </div>
 
-    <div>
-      <label class="block text-gray-700 font-medium">Mobile No.</label>
-      <input type="tel" name="mobile" placeholder="Your Mobile No."
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
-    </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Mobile No.</label>
+          <input type="tel" name="mobile" placeholder="Your Mobile No."
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
+        </div>
 
-    <div>
-      <label class="block text-gray-700 font-medium">Email</label>
-      <input type="email" name="email" placeholder="Your Email"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
-    </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Email</label>
+          <input type="email" name="email" placeholder="Your Email"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required>
+        </div>
 
-    <div>
-      <label class="block text-gray-700 font-medium">Message</label>
-      <textarea name="message" rows="4" placeholder="Your Message"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required></textarea>
-    </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea name="message" rows="4" placeholder="Your Message"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none" required></textarea>
+        </div>
 
-    <button type="submit"
-      class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
-      Send Message
-    </button>
-  </form>
-</section>
+        <button type="submit"
+          class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
     </section>
     <section id="review" class="py-16 bg-gray-50">
       <div class="container mx-auto px-4 max-w-7xl">
@@ -2776,21 +2799,21 @@
       item.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
       });
-    });  
+    });
 
     const form = document.getElementById("contact-form");
 
-    form.addEventListener("submit", function(e) {
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
 
       emailjs.sendForm(
         "service_bxbuf7y",
         "template_vwzak4e",
         this
-      ).then(function() {
+      ).then(function () {
         alert("Message sent successfully!");
         form.reset();
-      }, function(error) {
+      }, function (error) {
         alert("Failed to send message. Try again.");
         console.log(error);
       });

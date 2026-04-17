@@ -1,1103 +1,884 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./icons/kohinoor-logo.ico" />
-    <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#2C3E50",
-              secondary: "#E67E22",
-              backColor: "#d0d2d6",
-            },
-            borderRadius: {
-              none: "0px",
-              sm: "4px",
-              DEFAULT: "8px",
-              md: "12px",
-              lg: "16px",
-              xl: "20px",
-              "2xl": "24px",
-              "3xl": "32px",
-              full: "9999px",
-              button: "8px",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./icons/kohinoor-logo.ico" />
+  <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2C3E50",
+            secondary: "#E67E22",
+            backColor: "#d0d2d6",
+          },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
           },
         },
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("e0bs11i3EYBT5dX7G");
-      })();
-    </script>
-  </head>
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("e0bs11i3EYBT5dX7G");
+    })();
+  </script>
+</head>
 
-  <body class="bg-white min-h-screen">
-    <header
-      class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
-    >
-      <nav class="w-full flex items-center justify-between px-6 py-4">
-        <!-- Logo -->
-        <a href="index.html" class="flex-shrink-0">
-          <img
-            src="./icons/kohinoor-logo.png"
-            alt="Kohinoor Logo"
-            class="w-28"
-          />
-        </a>
-        <!-- Desktop Navigation -->
-        <ul class="hidden md:flex items-center space-x-8">
-          <li>
-            <a
-              href="index.html"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="about.html"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="index.html#products"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >Products</a
-            >
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="newCollection.html"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >New Collection</a
-            >
-          </li>
-          <li>
-            <a
-              href="awards.html"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >Awards</a
-            >
-          </li>
-          <li>
-            <a
-              href="distributor.html"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >Become a Distributor</a
-            >
-          </li>
-          <li>
-            <a
-              href="index.html#review"
-              class="text-white font-semibold hover:text-blue-400 transition"
-              >Review</a
-            >
-          </li>
-        </ul>
-        <!-- Contact Button -->
-        <!-- <a href="tel:+919821339373"
+<body class="bg-white min-h-screen">
+  <header
+    class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg">
+    <nav class="w-full flex items-center justify-between px-6 py-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0">
+        <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-28" />
+      </a>
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center space-x-8">
+        <li>
+          <a href="#home" class="text-white font-semibold hover:text-blue-400 transition">Home</a>
+        </li>
+        <li>
+          <a href="#products" class="text-white font-semibold hover:text-blue-400 transition">Products</a>
+        </li>
+        <li>
+          <a href="newCollection.html" class="text-white font-semibold hover:text-blue-400 transition">New
+            Collection</a>
+        </li>
+        <li>
+          <a href="about.html" class="text-white font-semibold hover:text-blue-400 transition">About Us</a>
+        </li>
+
+        <li>
+          <a href="distributor.html" class="text-white font-semibold hover:text-blue-400 transition">Become a
+            Distributor</a>
+        </li>
+        <li>
+          <a href="awards.html" class="text-white font-semibold hover:text-blue-400 transition">Awards</a>
+        </li>
+        <li>
+          <a href="#review" class="text-white font-semibold hover:text-blue-400 transition">Review</a>
+        </li>
+        <li>
+          <a href="#catalogue" class="text-white font-semibold hover:text-blue-400 transition">Catalogue</a>
+        </li>
+        <li>
+          <a href="blog.html" class="text-white font-semibold hover:text-blue-400 transition">Blog</a>
+        </li>
+      </ul>
+      <!-- Contact Button -->
+      <!-- <a href="tel:+919821339373"
         class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
         Contact Us
       </a> -->
-        <a
-          href="#"
-          data-contact-modal="open"
-          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
-        >
+      <a href="#" data-contact-modal="open"
+        class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Contact Us
+      </a>
+      <!-- Hamburger Menu Button -->
+      <button id="hamburger" class="md:hidden text-white text-2xl">
+        <i class="ri-menu-line"></i>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg">
+      <a href="#home" class="block hover:text-blue-400 transition">Home</a>
+      <a href="#products" class="block hover:text-blue-400 transition">Products</a>
+      <a href="newCollection.html" class="block hover:text-blue-400 transition">New Collection</a>
+      <a href="about.html" class="block hover:text-blue-400 transition">About Us</a>
+      <a href="distributor.html" class="block hover:text-blue-400 transition">Become a Distributor</a>
+      <a href="awards.html" class="block hover:text-blue-400 transition">Awards</a>
+      <a href="#review" class="block hover:text-blue-400 transition">Review</a>
+      <a href="#catalogue" class="block hover:text-blue-400 transition">Catalogue</a>
+      <a href="blog.html" class="block hover:text-blue-400 transition">Blog</a>
+      <div class="pr-4 pb-2">
+        <a href="#" data-contact-modal="open"
+          class="block w-full text-center bg-blue-500 text-white font-semibold py-2.5 rounded-lg hover:bg-blue-600 transition">
           Contact Us
         </a>
-        <!-- Hamburger Menu Button -->
-        <button id="hamburger" class="md:hidden text-white text-2xl">
-          <i class="ri-menu-line"></i>
-        </button>
-      </nav>
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
-      >
-        <a href="index.html" class="block hover:text-blue-400 transition"
-          >Home</a
-        >
-        <a href="about.html" class="block hover:text-blue-400 transition"
-          >About Us</a
-        >
-        <a
-          href="index.html#products"
-          class="block hover:text-blue-400 transition"
-          >Products</a
-        >
-        <a href="blog.html" class="block hover:text-blue-400 transition"
-          >Blog</a
-        >
-        <a href="newCollection.html" class="block hover:transition"
-          >New Collection</a
-        >
-        <a href="awards.html" class="block hover:transition">Awards</a>
-        <a href="distributor.html" class="block hover:transition"
-          >Become a Distributor</a
-        >
-        <a href="index.html#review" class="block hover:text-blue-400 transition"
-          >Review</a
-        >
-        <div class="pr-4 pb-2">
-          <a
-            href="#"
-            data-contact-modal="open"
-            class="block w-full text-center bg-blue-500 text-white font-semibold py-2.5 rounded-lg hover:bg-blue-600 transition"
-          >
-            Contact Us
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-primary/80 text-white py-20">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Awards & Recognition
+          </h1>
+          <p class="text-lg leading-relaxed mb-4">
+            Kohinoor has been consistently recognized as a trusted
+            manufacturer of premium curtain accessories and curtain tracks in
+            India. Our awards reflect decades of innovation, superior quality,
+            and customer satisfaction.
+          </p>
+          <div class="flex items-center gap-6 mt-6">
+            <div class="text-center">
+              <p class="text-4xl font-bold text-secondary">15+</p>
+              <p class="text-sm">Industry Awards</p>
+            </div>
+            <div class="text-center">
+              <p class="text-4xl font-bold text-secondary">25+</p>
+              <p class="text-sm">Years Excellence</p>
+            </div>
+            <div class="text-center">
+              <p class="text-4xl font-bold text-secondary">5000+</p>
+              <p class="text-sm">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+        <img src="./icons/kohinoor-logo.png"
+          alt="Kohinoor Awards and Recognition - Leading Curtain Accessories Manufacturer" class="w-full" />
+      </div>
+    </section>
+
+    <!-- SEO Rich Intro -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-primary">
+          Recognized Excellence in Curtain Accessories Manufacturing Across
+          India
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          As a leading
+          <strong>curtain accessories and track manufacturer in India</strong>, Kohinoor has earned recognition from
+          industry bodies, trade
+          associations, and retail partners across the nation. Our commitment
+          to innovation, durability, and elegant design has made us a
+          preferred choice for architects, interior designers, wholesalers,
+          and retailers throughout Mumbai, Delhi, Bangalore, Pune, and beyond.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          From <strong>aluminium curtain tracks</strong> and
+          <strong>designer finials</strong> to luxurious
+          <strong>tassels</strong>, stylish <strong>tie backs</strong>, and
+          comprehensive <strong>curtain hardware</strong>, every Kohinoor
+          product undergoes strict quality control and precision
+          manufacturing. These awards are a testament to our manufacturing
+          excellence, innovative design approach, and long-standing trust
+          built over decades in the Indian home decor market.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          Our recognition spans various categories including product
+          innovation, manufacturing quality, customer service excellence,
+          sustainable practices, and contribution to the Indian interior
+          design industry. We take pride in being not just a supplier, but a
+          partner in creating beautiful, functional window treatments that
+          transform living spaces across India.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why We Win Awards Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-primary">
+          Why Kohinoor Stands Out in Curtain Accessories Industry
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Our awards reflect our unwavering commitment to excellence in every
+          aspect of curtain accessories manufacturing
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="ri-star-fill text-3xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center">
+              Premium Quality
+            </h3>
+            <p class="text-gray-600 text-center">
+              High-grade materials and precision manufacturing ensure
+              durability and elegance in every curtain accessory
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="ri-lightbulb-flash-fill text-3xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center">Innovation</h3>
+            <p class="text-gray-600 text-center">
+              Continuous research and development in curtain track systems and
+              decorative hardware design
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="ri-customer-service-2-fill text-3xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center">
+              Customer Service
+            </h3>
+            <p class="text-gray-600 text-center">
+              Dedicated support for architects, designers, and retailers with
+              expert consultation and timely delivery
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="ri-line-chart-fill text-3xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center">
+              Market Leadership
+            </h3>
+            <p class="text-gray-600 text-center">
+              Trusted by thousands of professionals across India for wholesale
+              and retail curtain accessories
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Grid with Images -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-primary">
+          Our Major Awards & Industry Achievements
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Recognition from prestigious organizations and industry bodies that
+          validate our position as India's leading curtain accessories
+          manufacturer
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-red-100 flex items-center justify-center">
+              <i class="ri-thumb-up-fill text-7xl text-secondary"></i>
+            </div>
+            <div class="p-6 text-center">
+              <i class="ri-award-fill text-4xl text-secondary mb-3"></i>
+              <h3 class="text-xl font-bold mb-2 text-primary">
+                Best Curtain Accessories Brand
+              </h3>
+              <p class="text-gray-600 font-semibold mb-1">
+                Interior Design Excellence Awards
+              </p>
+              <p class="text-sm text-secondary font-bold mb-3">2024</p>
+              <p class="text-sm text-gray-600">
+                Recognized for outstanding product range, design innovation,
+                and contribution to the Indian interior design industry
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="w-full h-48 bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center">
+              <i class="ri-building-3-fill text-7xl text-secondary"></i>
+            </div>
+            <div class="p-6 text-center">
+              <i class="ri-trophy-fill text-4xl text-secondary mb-3"></i>
+              <h3 class="text-xl font-bold mb-2 text-primary">
+                Innovation in Hardware Manufacturing
+              </h3>
+              <p class="text-gray-600 font-semibold mb-1">
+                National Manufacturing Summit
+              </p>
+              <p class="text-sm text-secondary font-bold mb-3">2023</p>
+              <p class="text-sm text-gray-600">
+                Honored for breakthrough innovations in aluminium curtain
+                track technology and automated manufacturing processes
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="w-full h-48 bg-gradient-to-br from-green-100 to-red-100 flex items-center justify-center">
+              <i class="ri-medal-2-line text-7xl text-secondary"></i>
+            </div>
+            <div class="p-6 text-center">
+              <i class="ri-medal-fill text-4xl text-secondary mb-3"></i>
+              <h3 class="text-xl font-bold mb-2 text-primary">
+                Quality Excellence Award
+              </h3>
+              <p class="text-gray-600 font-semibold mb-1">
+                Indian Home Decor Association
+              </p>
+              <p class="text-sm text-secondary font-bold mb-3">2022</p>
+              <p class="text-sm text-gray-600">
+                Awarded for maintaining highest quality standards in
+                manufacturing curtain finials, tassels, and hardware
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="w-full h-48 bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
+              <i class="ri-shield-star-fill text-7xl text-secondary"></i>
+            </div>
+            <div class="p-6 text-center">
+              <i class="ri-verified-badge-fill text-4xl text-secondary mb-3"></i>
+              <h3 class="text-xl font-bold mb-2 text-primary">
+                Customer Satisfaction Excellence
+              </h3>
+              <p class="text-gray-600 font-semibold mb-1">
+                Retail Excellence Awards
+              </p>
+              <p class="text-sm text-secondary font-bold mb-3">2023</p>
+              <p class="text-sm text-gray-600">
+                Recognized for exceptional customer service and support to
+                retailers and wholesalers across India
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+              <i class="ri-earth-fill text-7xl text-secondary"></i>
+            </div>
+            <div class="p-6 text-center">
+              <i class="ri-leaf-fill text-4xl text-secondary mb-3"></i>
+              <h3 class="text-xl font-bold mb-2 text-primary">
+                Sustainable Manufacturing Award
+              </h3>
+              <p class="text-gray-600 font-semibold mb-1">
+                Green India Initiative
+              </p>
+              <p class="text-sm text-secondary font-bold mb-3">2021</p>
+              <p class="text-sm text-gray-600">
+                Honored for implementing eco-friendly practices in curtain
+                accessories production and waste management
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="w-full h-48 bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center">
+              <i class="ri-team-fill text-7xl text-secondary"></i>
+            </div>
+            <div class="p-6 text-center">
+              <i class="ri-handbag-fill text-4xl text-secondary mb-3"></i>
+              <h3 class="text-xl font-bold mb-2 text-primary">
+                Best B2B Partner Award
+              </h3>
+              <p class="text-gray-600 font-semibold mb-1">
+                India Trade Excellence
+              </p>
+              <p class="text-sm text-secondary font-bold mb-3">2022</p>
+              <p class="text-sm text-gray-600">
+                Recognized for reliable partnerships with architects, interior
+                designers, and retail distributors
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-primary">
+          Quality Certifications & Industry Standards
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Our manufacturing processes adhere to international quality
+          standards and industry best practices
+        </p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <i class="ri-checkbox-circle-fill text-5xl text-secondary mb-4"></i>
+            <h3 class="text-xl font-bold mb-3">ISO 9001:2015 Certified</h3>
+            <p class="text-gray-600">
+              Quality management systems certification for consistent product
+              excellence
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <i class="ri-shield-check-fill text-5xl text-secondary mb-4"></i>
+            <h3 class="text-xl font-bold mb-3">BIS Certified Products</h3>
+            <p class="text-gray-600">
+              Bureau of Indian Standards certification for selected product
+              ranges
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <i class="ri-calendar-check-fill text-5xl text-secondary mb-4"></i>
+            <h3 class="text-xl font-bold mb-3">25+ Years Experience</h3>
+            <p class="text-gray-600">
+              Decades of expertise in curtain accessories manufacturing and
+              innovation
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-primary">
+          Our Journey of Recognition & Milestones
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Two decades of consistent excellence, innovation, and industry
+          leadership in curtain accessories manufacturing
+        </p>
+        <div class="space-y-8">
+          <div class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition">
+            <span class="text-secondary font-bold text-2xl min-w-[80px]">2024</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">
+                National Recognition for Design Innovation
+              </h3>
+              <p class="text-gray-600">
+                Recognized nationally for premium curtain accessories, design
+                innovation in finials and tassels, and contribution to modern
+                Indian interior aesthetics.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition">
+            <span class="text-secondary font-bold text-2xl min-w-[80px]">2023</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">
+                Excellence in Manufacturing & Customer Service
+              </h3>
+              <p class="text-gray-600">
+                Awarded for breakthrough innovations in aluminium curtain
+                track manufacturing and exceptional B2B customer support
+                services across India.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition">
+            <span class="text-secondary font-bold text-2xl min-w-[80px]">2022</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">
+                Quality Excellence & Industry Leadership
+              </h3>
+              <p class="text-gray-600">
+                Honored for consistent product quality, reliable manufacturing
+                standards, and establishing benchmarks in curtain hardware
+                industry.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition">
+            <span class="text-secondary font-bold text-2xl min-w-[80px]">2021</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">
+                Sustainable Manufacturing Practices
+              </h3>
+              <p class="text-gray-600">
+                Recognition for implementing eco-friendly manufacturing
+                processes and sustainable material sourcing for curtain
+                accessories production.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition">
+            <span class="text-secondary font-bold text-2xl min-w-[80px]">2020</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">
+                Leading Curtain Track Manufacturer
+              </h3>
+              <p class="text-gray-600">
+                Honored as a leading curtain track manufacturer at India Trade
+                Expo for product range diversity and manufacturing capability.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition">
+            <span class="text-secondary font-bold text-2xl min-w-[80px]">2018</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Product Innovation Award</h3>
+              <p class="text-gray-600">
+                Recognized for introducing innovative designs in curtain
+                finials, decorative hardware, and space-saving curtain track
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials from Award Bodies -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">
+          What Industry Leaders Say About Kohinoor
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <i class="ri-double-quotes-l text-4xl text-secondary mr-3"></i>
+              <div>
+                <h4 class="font-bold">
+                  Interior Design Excellence Awards Committee
+                </h4>
+                <p class="text-sm text-gray-500">2024</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "Kohinoor has consistently demonstrated exceptional quality in
+              their curtain accessories range. Their innovation in combining
+              traditional craftsmanship with modern design makes them a
+              deserving winner of our Best Brand Award."
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <i class="ri-double-quotes-l text-4xl text-secondary mr-3"></i>
+              <div>
+                <h4 class="font-bold">National Manufacturing Summit Panel</h4>
+                <p class="text-sm text-gray-500">2023</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "The innovation shown by Kohinoor in aluminium curtain track
+              manufacturing sets a benchmark for the industry. Their
+              commitment to quality and technological advancement is truly
+              commendable."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-primary">
+          Award-Winning Product Categories
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Explore our comprehensive range of premium curtain accessories that
+          have earned industry recognition
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition">
+            <i class="ri-stack-fill text-4xl text-secondary mb-3"></i>
+            <h3 class="text-xl font-bold mb-2">Aluminium Curtain Tracks</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              High-grade imported tracks for smooth curtain operation
+            </p>
+            <a href="Tracks.html" class="text-secondary font-semibold text-sm hover:underline">View Products →</a>
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition">
+            <i class="ri-focus-3-fill text-4xl text-secondary mb-3"></i>
+            <h3 class="text-xl font-bold mb-2">Designer Finials</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Elegant decorative rod ends in various styles and finishes
+            </p>
+            <a href="Finials.html" class="text-secondary font-semibold text-sm hover:underline">View Products →</a>
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition">
+            <i class="ri-t-shirt-fill text-4xl text-secondary mb-3"></i>
+            <h3 class="text-xl font-bold mb-2">Luxury Tassels</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Premium imported tassels for sophisticated window treatments
+            </p>
+            <a href="Tassels.html" class="text-secondary font-semibold text-sm hover:underline">View Products →</a>
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition">
+            <i class="ri-links-fill text-4xl text-secondary mb-3"></i>
+            <h3 class="text-xl font-bold mb-2">Steel Pipes & Rods</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Durable curtain rods in multiple sizes and finishes
+            </p>
+            <a href="Pipes.html" class="text-secondary font-semibold text-sm hover:underline">View Products →</a>
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition">
+            <i class="ri-scissors-cut-fill text-4xl text-secondary mb-3"></i>
+            <h3 class="text-xl font-bold mb-2">Curtain Accessories</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Complete range of hooks, rings, and mounting hardware
+            </p>
+            <a href="CurtainAccessory.html" class="text-secondary font-semibold text-sm hover:underline">View Products
+              →</a>
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition">
+            <i class="ri-loop-right-fill text-4xl text-secondary mb-3"></i>
+            <h3 class="text-xl font-bold mb-2">Elegant Tie Backs</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Stylish tie backs to enhance your curtain presentation
+            </p>
+            <a href="TieBack.html" class="text-secondary font-semibold text-sm hover:underline">View Products →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">
+          Frequently Asked Questions About Our Awards
+        </h2>
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-3 text-primary">
+              What makes Kohinoor an award-winning curtain accessories
+              manufacturer?
+            </h3>
+            <p class="text-gray-600">
+              Kohinoor has earned multiple awards for our commitment to
+              quality, innovation in design, use of premium imported
+              materials, sustainable manufacturing practices, and exceptional
+              customer service. Our 25+ years of experience and ISO
+              certifications validate our position as an industry leader in
+              India.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-3 text-primary">
+              Which organizations have recognized Kohinoor?
+            </h3>
+            <p class="text-gray-600">
+              We have been recognized by prestigious organizations including
+              the Interior Design Excellence Awards, National Manufacturing
+              Summit, Indian Home Decor Association, Retail Excellence Awards,
+              Green India Initiative, and India Trade Excellence among others.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-3 text-primary">
+              Are Kohinoor products certified for quality?
+            </h3>
+            <p class="text-gray-600">
+              Yes, our manufacturing processes are ISO 9001:2015 certified,
+              and selected product ranges carry BIS (Bureau of Indian
+              Standards) certification. We maintain strict quality control
+              throughout our production process to ensure every curtain
+              accessory meets international standards.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-3 text-primary">
+              What product categories have won awards?
+            </h3>
+            <p class="text-gray-600">
+              Our award-winning product range includes aluminium curtain
+              tracks, designer finials, luxury tassels, steel pipes and rods,
+              curtain accessories (hooks, rings, brackets), and elegant tie
+              backs. Each category reflects our commitment to quality and
+              design excellence.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-3 text-primary">
+              How can I purchase Kohinoor's award-winning products?
+            </h3>
+            <p class="text-gray-600">
+              Our products are available through authorized retailers and
+              wholesalers across India, as well as through our direct sales
+              channel. For bulk orders, wholesale inquiries, or to find a
+              retailer near you, please contact us at +91 98213 39373 or visit
+              our showroom in Mumbai.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary to-primary/90 text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Partner with an Award-Winning Brand
+        </h2>
+        <p class="text-lg mb-8">
+          Join thousands of architects, interior designers, and retailers who
+          trust Kohinoor for premium curtain accessories across India.
+          Experience the quality that has earned us industry recognition and
+          customer loyalty for over 25 years.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="index.html#products"
+            class="bg-secondary px-8 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition">Explore Our
+            Products</a>
+          <a href="tel:+919821339373"
+            class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us
+            Today</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <a href="index.html" class="flex-shrink-0 items-center justify-center">
+            <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" class="w-40" />
           </a>
-        </div>
-      </div>
-    </header>
-
-    <main class="pt-24">
-      <!-- Hero Section -->
-      <section
-        class="bg-gradient-to-r from-primary to-primary/80 text-white py-20"
-      >
-        <div
-          class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
-        >
-          <div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">
-              Awards & Recognition
-            </h1>
-            <p class="text-lg leading-relaxed mb-4">
-              Kohinoor has been consistently recognized as a trusted
-              manufacturer of premium curtain accessories and curtain tracks in
-              India. Our awards reflect decades of innovation, superior quality,
-              and customer satisfaction.
-            </p>
-            <div class="flex items-center gap-6 mt-6">
-              <div class="text-center">
-                <p class="text-4xl font-bold text-secondary">15+</p>
-                <p class="text-sm">Industry Awards</p>
-              </div>
-              <div class="text-center">
-                <p class="text-4xl font-bold text-secondary">25+</p>
-                <p class="text-sm">Years Excellence</p>
-              </div>
-              <div class="text-center">
-                <p class="text-4xl font-bold text-secondary">5000+</p>
-                <p class="text-sm">Happy Clients</p>
-              </div>
-            </div>
-          </div>
-          <img
-            src="./icons/kohinoor-logo.png"
-            alt="Kohinoor Awards and Recognition - Leading Curtain Accessories Manufacturer"
-            class="w-full"
-          />
-        </div>
-      </section>
-
-      <!-- SEO Rich Intro -->
-      <section class="py-16 bg-white">
-        <div class="max-w-5xl mx-auto px-6">
-          <h2 class="text-3xl font-bold mb-6 text-primary">
-            Recognized Excellence in Curtain Accessories Manufacturing Across
-            India
-          </h2>
-          <p class="text-gray-700 leading-relaxed mb-6">
-            As a leading
-            <strong>curtain accessories and track manufacturer in India</strong
-            >, Kohinoor has earned recognition from industry bodies, trade
-            associations, and retail partners across the nation. Our commitment
-            to innovation, durability, and elegant design has made us a
-            preferred choice for architects, interior designers, wholesalers,
-            and retailers throughout Mumbai, Delhi, Bangalore, Pune, and beyond.
+          <p class="text-gray-400 mb-6">
+            Transform your windows with our premium curtain accessories.
           </p>
-          <p class="text-gray-700 leading-relaxed mb-6">
-            From <strong>aluminium curtain tracks</strong> and
-            <strong>designer finials</strong> to luxurious
-            <strong>tassels</strong>, stylish <strong>tie backs</strong>, and
-            comprehensive <strong>curtain hardware</strong>, every Kohinoor
-            product undergoes strict quality control and precision
-            manufacturing. These awards are a testament to our manufacturing
-            excellence, innovative design approach, and long-standing trust
-            built over decades in the Indian home decor market.
-          </p>
-          <p class="text-gray-700 leading-relaxed">
-            Our recognition spans various categories including product
-            innovation, manufacturing quality, customer service excellence,
-            sustainable practices, and contribution to the Indian interior
-            design industry. We take pride in being not just a supplier, but a
-            partner in creating beautiful, functional window treatments that
-            transform living spaces across India.
-          </p>
-        </div>
-      </section>
-
-      <!-- Why We Win Awards Section -->
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4 text-primary">
-            Why Kohinoor Stands Out in Curtain Accessories Industry
-          </h2>
-          <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Our awards reflect our unwavering commitment to excellence in every
-            aspect of curtain accessories manufacturing
-          </p>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div
-              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
-            >
-              <div
-                class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto"
-              >
-                <i class="ri-star-fill text-3xl text-secondary"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-3 text-center">
-                Premium Quality
-              </h3>
-              <p class="text-gray-600 text-center">
-                High-grade materials and precision manufacturing ensure
-                durability and elegance in every curtain accessory
-              </p>
-            </div>
-            <div
-              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
-            >
-              <div
-                class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto"
-              >
-                <i class="ri-lightbulb-flash-fill text-3xl text-secondary"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-3 text-center">Innovation</h3>
-              <p class="text-gray-600 text-center">
-                Continuous research and development in curtain track systems and
-                decorative hardware design
-              </p>
-            </div>
-            <div
-              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
-            >
-              <div
-                class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto"
-              >
-                <i
-                  class="ri-customer-service-2-fill text-3xl text-secondary"
-                ></i>
-              </div>
-              <h3 class="text-xl font-bold mb-3 text-center">
-                Customer Service
-              </h3>
-              <p class="text-gray-600 text-center">
-                Dedicated support for architects, designers, and retailers with
-                expert consultation and timely delivery
-              </p>
-            </div>
-            <div
-              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
-            >
-              <div
-                class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto"
-              >
-                <i class="ri-line-chart-fill text-3xl text-secondary"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-3 text-center">
-                Market Leadership
-              </h3>
-              <p class="text-gray-600 text-center">
-                Trusted by thousands of professionals across India for wholesale
-                and retail curtain accessories
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Awards Grid with Images -->
-      <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4 text-primary">
-            Our Major Awards & Industry Achievements
-          </h2>
-          <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Recognition from prestigious organizations and industry bodies that
-            validate our position as India's leading curtain accessories
-            manufacturer
-          </p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-br from-blue-100 to-red-100 flex items-center justify-center"
-              >
-                <i class="ri-thumb-up-fill text-7xl text-secondary"></i>
-              </div>
-              <div class="p-6 text-center">
-                <i class="ri-award-fill text-4xl text-secondary mb-3"></i>
-                <h3 class="text-xl font-bold mb-2 text-primary">
-                  Best Curtain Accessories Brand
-                </h3>
-                <p class="text-gray-600 font-semibold mb-1">
-                  Interior Design Excellence Awards
-                </p>
-                <p class="text-sm text-secondary font-bold mb-3">2024</p>
-                <p class="text-sm text-gray-600">
-                  Recognized for outstanding product range, design innovation,
-                  and contribution to the Indian interior design industry
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center"
-              >
-                <i class="ri-building-3-fill text-7xl text-secondary"></i>
-              </div>
-              <div class="p-6 text-center">
-                <i class="ri-trophy-fill text-4xl text-secondary mb-3"></i>
-                <h3 class="text-xl font-bold mb-2 text-primary">
-                  Innovation in Hardware Manufacturing
-                </h3>
-                <p class="text-gray-600 font-semibold mb-1">
-                  National Manufacturing Summit
-                </p>
-                <p class="text-sm text-secondary font-bold mb-3">2023</p>
-                <p class="text-sm text-gray-600">
-                  Honored for breakthrough innovations in aluminium curtain
-                  track technology and automated manufacturing processes
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-br from-green-100 to-red-100 flex items-center justify-center"
-              >
-                <i class="ri-medal-2-line text-7xl text-secondary"></i>
-              </div>
-              <div class="p-6 text-center">
-                <i class="ri-medal-fill text-4xl text-secondary mb-3"></i>
-                <h3 class="text-xl font-bold mb-2 text-primary">
-                  Quality Excellence Award
-                </h3>
-                <p class="text-gray-600 font-semibold mb-1">
-                  Indian Home Decor Association
-                </p>
-                <p class="text-sm text-secondary font-bold mb-3">2022</p>
-                <p class="text-sm text-gray-600">
-                  Awarded for maintaining highest quality standards in
-                  manufacturing curtain finials, tassels, and hardware
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center"
-              >
-                <i class="ri-shield-star-fill text-7xl text-secondary"></i>
-              </div>
-              <div class="p-6 text-center">
-                <i
-                  class="ri-verified-badge-fill text-4xl text-secondary mb-3"
-                ></i>
-                <h3 class="text-xl font-bold mb-2 text-primary">
-                  Customer Satisfaction Excellence
-                </h3>
-                <p class="text-gray-600 font-semibold mb-1">
-                  Retail Excellence Awards
-                </p>
-                <p class="text-sm text-secondary font-bold mb-3">2023</p>
-                <p class="text-sm text-gray-600">
-                  Recognized for exceptional customer service and support to
-                  retailers and wholesalers across India
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center"
-              >
-                <i class="ri-earth-fill text-7xl text-secondary"></i>
-              </div>
-              <div class="p-6 text-center">
-                <i class="ri-leaf-fill text-4xl text-secondary mb-3"></i>
-                <h3 class="text-xl font-bold mb-2 text-primary">
-                  Sustainable Manufacturing Award
-                </h3>
-                <p class="text-gray-600 font-semibold mb-1">
-                  Green India Initiative
-                </p>
-                <p class="text-sm text-secondary font-bold mb-3">2021</p>
-                <p class="text-sm text-gray-600">
-                  Honored for implementing eco-friendly practices in curtain
-                  accessories production and waste management
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center"
-              >
-                <i class="ri-team-fill text-7xl text-secondary"></i>
-              </div>
-              <div class="p-6 text-center">
-                <i class="ri-handbag-fill text-4xl text-secondary mb-3"></i>
-                <h3 class="text-xl font-bold mb-2 text-primary">
-                  Best B2B Partner Award
-                </h3>
-                <p class="text-gray-600 font-semibold mb-1">
-                  India Trade Excellence
-                </p>
-                <p class="text-sm text-secondary font-bold mb-3">2022</p>
-                <p class="text-sm text-gray-600">
-                  Recognized for reliable partnerships with architects, interior
-                  designers, and retail distributors
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Certifications Section -->
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4 text-primary">
-            Quality Certifications & Industry Standards
-          </h2>
-          <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Our manufacturing processes adhere to international quality
-            standards and industry best practices
-          </p>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-              <i
-                class="ri-checkbox-circle-fill text-5xl text-secondary mb-4"
-              ></i>
-              <h3 class="text-xl font-bold mb-3">ISO 9001:2015 Certified</h3>
-              <p class="text-gray-600">
-                Quality management systems certification for consistent product
-                excellence
-              </p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-              <i class="ri-shield-check-fill text-5xl text-secondary mb-4"></i>
-              <h3 class="text-xl font-bold mb-3">BIS Certified Products</h3>
-              <p class="text-gray-600">
-                Bureau of Indian Standards certification for selected product
-                ranges
-              </p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-              <i
-                class="ri-calendar-check-fill text-5xl text-secondary mb-4"
-              ></i>
-              <h3 class="text-xl font-bold mb-3">25+ Years Experience</h3>
-              <p class="text-gray-600">
-                Decades of expertise in curtain accessories manufacturing and
-                innovation
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Timeline Section -->
-      <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4 text-primary">
-            Our Journey of Recognition & Milestones
-          </h2>
-          <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Two decades of consistent excellence, innovation, and industry
-            leadership in curtain accessories manufacturing
-          </p>
-          <div class="space-y-8">
-            <div
-              class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition"
-            >
-              <span class="text-secondary font-bold text-2xl min-w-[80px]"
-                >2024</span
-              >
-              <div>
-                <h3 class="font-bold text-lg mb-2">
-                  National Recognition for Design Innovation
-                </h3>
-                <p class="text-gray-600">
-                  Recognized nationally for premium curtain accessories, design
-                  innovation in finials and tassels, and contribution to modern
-                  Indian interior aesthetics.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition"
-            >
-              <span class="text-secondary font-bold text-2xl min-w-[80px]"
-                >2023</span
-              >
-              <div>
-                <h3 class="font-bold text-lg mb-2">
-                  Excellence in Manufacturing & Customer Service
-                </h3>
-                <p class="text-gray-600">
-                  Awarded for breakthrough innovations in aluminium curtain
-                  track manufacturing and exceptional B2B customer support
-                  services across India.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition"
-            >
-              <span class="text-secondary font-bold text-2xl min-w-[80px]"
-                >2022</span
-              >
-              <div>
-                <h3 class="font-bold text-lg mb-2">
-                  Quality Excellence & Industry Leadership
-                </h3>
-                <p class="text-gray-600">
-                  Honored for consistent product quality, reliable manufacturing
-                  standards, and establishing benchmarks in curtain hardware
-                  industry.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition"
-            >
-              <span class="text-secondary font-bold text-2xl min-w-[80px]"
-                >2021</span
-              >
-              <div>
-                <h3 class="font-bold text-lg mb-2">
-                  Sustainable Manufacturing Practices
-                </h3>
-                <p class="text-gray-600">
-                  Recognition for implementing eco-friendly manufacturing
-                  processes and sustainable material sourcing for curtain
-                  accessories production.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition"
-            >
-              <span class="text-secondary font-bold text-2xl min-w-[80px]"
-                >2020</span
-              >
-              <div>
-                <h3 class="font-bold text-lg mb-2">
-                  Leading Curtain Track Manufacturer
-                </h3>
-                <p class="text-gray-600">
-                  Honored as a leading curtain track manufacturer at India Trade
-                  Expo for product range diversity and manufacturing capability.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex gap-6 items-start border-l-4 border-secondary pl-6 py-4 hover:bg-gray-50 transition"
-            >
-              <span class="text-secondary font-bold text-2xl min-w-[80px]"
-                >2018</span
-              >
-              <div>
-                <h3 class="font-bold text-lg mb-2">Product Innovation Award</h3>
-                <p class="text-gray-600">
-                  Recognized for introducing innovative designs in curtain
-                  finials, decorative hardware, and space-saving curtain track
-                  solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials from Award Bodies -->
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-12 text-primary">
-            What Industry Leaders Say About Kohinoor
-          </h2>
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <div class="flex items-center mb-4">
-                <i class="ri-double-quotes-l text-4xl text-secondary mr-3"></i>
-                <div>
-                  <h4 class="font-bold">
-                    Interior Design Excellence Awards Committee
-                  </h4>
-                  <p class="text-sm text-gray-500">2024</p>
-                </div>
-              </div>
-              <p class="text-gray-600 italic">
-                "Kohinoor has consistently demonstrated exceptional quality in
-                their curtain accessories range. Their innovation in combining
-                traditional craftsmanship with modern design makes them a
-                deserving winner of our Best Brand Award."
-              </p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <div class="flex items-center mb-4">
-                <i class="ri-double-quotes-l text-4xl text-secondary mr-3"></i>
-                <div>
-                  <h4 class="font-bold">National Manufacturing Summit Panel</h4>
-                  <p class="text-sm text-gray-500">2023</p>
-                </div>
-              </div>
-              <p class="text-gray-600 italic">
-                "The innovation shown by Kohinoor in aluminium curtain track
-                manufacturing sets a benchmark for the industry. Their
-                commitment to quality and technological advancement is truly
-                commendable."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Product Categories Section -->
-      <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4 text-primary">
-            Award-Winning Product Categories
-          </h2>
-          <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Explore our comprehensive range of premium curtain accessories that
-            have earned industry recognition
-          </p>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div
-              class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition"
-            >
-              <i class="ri-stack-fill text-4xl text-secondary mb-3"></i>
-              <h3 class="text-xl font-bold mb-2">Aluminium Curtain Tracks</h3>
-              <p class="text-gray-600 text-sm mb-3">
-                High-grade imported tracks for smooth curtain operation
-              </p>
-              <a
-                href="Tracks.html"
-                class="text-secondary font-semibold text-sm hover:underline"
-                >View Products →</a
-              >
-            </div>
-            <div
-              class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition"
-            >
-              <i class="ri-focus-3-fill text-4xl text-secondary mb-3"></i>
-              <h3 class="text-xl font-bold mb-2">Designer Finials</h3>
-              <p class="text-gray-600 text-sm mb-3">
-                Elegant decorative rod ends in various styles and finishes
-              </p>
-              <a
-                href="Finials.html"
-                class="text-secondary font-semibold text-sm hover:underline"
-                >View Products →</a
-              >
-            </div>
-            <div
-              class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition"
-            >
-              <i class="ri-t-shirt-fill text-4xl text-secondary mb-3"></i>
-              <h3 class="text-xl font-bold mb-2">Luxury Tassels</h3>
-              <p class="text-gray-600 text-sm mb-3">
-                Premium imported tassels for sophisticated window treatments
-              </p>
-              <a
-                href="Tassels.html"
-                class="text-secondary font-semibold text-sm hover:underline"
-                >View Products →</a
-              >
-            </div>
-            <div
-              class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition"
-            >
-              <i class="ri-links-fill text-4xl text-secondary mb-3"></i>
-              <h3 class="text-xl font-bold mb-2">Steel Pipes & Rods</h3>
-              <p class="text-gray-600 text-sm mb-3">
-                Durable curtain rods in multiple sizes and finishes
-              </p>
-              <a
-                href="Pipes.html"
-                class="text-secondary font-semibold text-sm hover:underline"
-                >View Products →</a
-              >
-            </div>
-            <div
-              class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition"
-            >
-              <i class="ri-scissors-cut-fill text-4xl text-secondary mb-3"></i>
-              <h3 class="text-xl font-bold mb-2">Curtain Accessories</h3>
-              <p class="text-gray-600 text-sm mb-3">
-                Complete range of hooks, rings, and mounting hardware
-              </p>
-              <a
-                href="CurtainAccessory.html"
-                class="text-secondary font-semibold text-sm hover:underline"
-                >View Products →</a
-              >
-            </div>
-            <div
-              class="border-2 border-gray-200 rounded-lg p-6 hover:border-secondary transition"
-            >
-              <i class="ri-loop-right-fill text-4xl text-secondary mb-3"></i>
-              <h3 class="text-xl font-bold mb-2">Elegant Tie Backs</h3>
-              <p class="text-gray-600 text-sm mb-3">
-                Stylish tie backs to enhance your curtain presentation
-              </p>
-              <a
-                href="TieBack.html"
-                class="text-secondary font-semibold text-sm hover:underline"
-                >View Products →</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-12 text-primary">
-            Frequently Asked Questions About Our Awards
-          </h2>
-          <div class="space-y-6">
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-bold mb-3 text-primary">
-                What makes Kohinoor an award-winning curtain accessories
-                manufacturer?
-              </h3>
-              <p class="text-gray-600">
-                Kohinoor has earned multiple awards for our commitment to
-                quality, innovation in design, use of premium imported
-                materials, sustainable manufacturing practices, and exceptional
-                customer service. Our 25+ years of experience and ISO
-                certifications validate our position as an industry leader in
-                India.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-bold mb-3 text-primary">
-                Which organizations have recognized Kohinoor?
-              </h3>
-              <p class="text-gray-600">
-                We have been recognized by prestigious organizations including
-                the Interior Design Excellence Awards, National Manufacturing
-                Summit, Indian Home Decor Association, Retail Excellence Awards,
-                Green India Initiative, and India Trade Excellence among others.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-bold mb-3 text-primary">
-                Are Kohinoor products certified for quality?
-              </h3>
-              <p class="text-gray-600">
-                Yes, our manufacturing processes are ISO 9001:2015 certified,
-                and selected product ranges carry BIS (Bureau of Indian
-                Standards) certification. We maintain strict quality control
-                throughout our production process to ensure every curtain
-                accessory meets international standards.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-bold mb-3 text-primary">
-                What product categories have won awards?
-              </h3>
-              <p class="text-gray-600">
-                Our award-winning product range includes aluminium curtain
-                tracks, designer finials, luxury tassels, steel pipes and rods,
-                curtain accessories (hooks, rings, brackets), and elegant tie
-                backs. Each category reflects our commitment to quality and
-                design excellence.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-bold mb-3 text-primary">
-                How can I purchase Kohinoor's award-winning products?
-              </h3>
-              <p class="text-gray-600">
-                Our products are available through authorized retailers and
-                wholesalers across India, as well as through our direct sales
-                channel. For bulk orders, wholesale inquiries, or to find a
-                retailer near you, please contact us at +91 98213 39373 or visit
-                our showroom in Mumbai.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section
-        class="py-20 bg-gradient-to-r from-primary to-primary/90 text-white"
-      >
-        <div class="max-w-4xl mx-auto px-6 text-center">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Partner with an Award-Winning Brand
-          </h2>
-          <p class="text-lg mb-8">
-            Join thousands of architects, interior designers, and retailers who
-            trust Kohinoor for premium curtain accessories across India.
-            Experience the quality that has earned us industry recognition and
-            customer loyalty for over 25 years.
-          </p>
-          <div class="flex flex-wrap gap-4 justify-center">
-            <a
-              href="index.html#products"
-              class="bg-secondary px-8 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition"
-              >Explore Our Products</a
-            >
-            <a
-              href="tel:+919821339373"
-              class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-              >Contact Us Today</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer (same as index.html) -->
-    <footer class="bg-primary text-white py-16">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div>
-            <a
-              href="index.html"
-              class="flex-shrink-0 items-center justify-center"
-            >
-              <img
-                src="./icons/kohinoor-logo.png"
-                alt="Kohinoor Logo"
-                class="w-40"
-              />
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/KohinoorIndia.org/"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+              <i class="ri-facebook-fill"></i>
             </a>
-            <p class="text-gray-400 mb-6">
-              Transform your windows with our premium curtain accessories.
-            </p>
-            <div class="flex space-x-4">
-              <a
-                href="https://www.facebook.com/KohinoorIndia.org/"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
-              >
-                <i class="ri-facebook-fill"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/kohinoor_india_org/"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
-              >
-                <i class="ri-pinterest-line"></i>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
-            <ul class="space-y-4">
-              <li>
-                <a href="index.html" class="text-gray-400 hover:text-white"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="text-gray-400 hover:text-white"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="tel:+919821339373"
-                  class="text-gray-400 hover:text-white"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a href="blog.html" class="text-gray-400 hover:text-white"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#review"
-                  class="text-gray-400 hover:text-white"
-                  >Review</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-6">Products</h3>
-            <ul class="space-y-4">
-              <li>
-                <a href="Tracks.html" class="text-gray-400 hover:text-white"
-                  >Imp High Grade Aluminium Tracks</a
-                >
-              </li>
-              <li>
-                <a href="Finials.html" class="text-gray-400 hover:text-white"
-                  >Imp Finials</a
-                >
-              </li>
-              <li>
-                <a href="Tassels.html" class="text-gray-400 hover:text-white"
-                  >Imp Tassels</a
-                >
-              </li>
-              <li>
-                <a href="Pipes.html" class="text-gray-400 hover:text-white"
-                  >Imp Steel Pipes and Rods</a
-                >
-              </li>
-              <li>
-                <a
-                  href="CurtainAccessory.html"
-                  class="text-gray-400 hover:text-white"
-                  >Imp Curtain Accessory</a
-                >
-              </li>
-              <li>
-                <a href="TieBack.html" class="text-gray-400 hover:text-white"
-                  >Imp Tie Backs</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
-            <ul class="space-y-4">
-              <li class="flex items-center text-gray-400">
-                <i class="ri-map-pin-line mr-3"></i>
-                <span
-                  >1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan,
-                  Chincholi Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
-                  India.</span
-                >
-              </li>
-              <li class="flex items-center text-gray-400">
-                <i class="ri-phone-line mr-3"></i>
-                <span>+91 98213 39373</span>
-              </li>
-              <li class="flex items-center text-gray-400">
-                <i class="ri-time-line mr-3"></i>
-                <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
-              </li>
-            </ul>
+            <a href="https://www.instagram.com/kohinoor_india_org/"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20">
+              <i class="ri-pinterest-line"></i>
+            </a>
           </div>
         </div>
-        <div class="border-t border-gray-800 mt-12 pt-8">
-          <div class="flex flex-wrap justify-between items-center">
-            <p class="text-gray-400">
-              &copy; 2025 Kohinoor All rights reserved.
-            </p>
-          </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-gray-400 hover:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="tel:+919821339373" class="text-gray-400 hover:text-white">Contact</a>
+            </li>
+            <li>
+              <a href="blog.html" class="text-gray-400 hover:text-white">Blog</a>
+            </li>
+            <li>
+              <a href="index.html#review" class="text-gray-400 hover:text-white">Review</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Products</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="Tracks.html" class="text-gray-400 hover:text-white">Imp High Grade Aluminium Tracks</a>
+            </li>
+            <li>
+              <a href="Finials.html" class="text-gray-400 hover:text-white">Imp Finials</a>
+            </li>
+            <li>
+              <a href="Tassels.html" class="text-gray-400 hover:text-white">Imp Tassels</a>
+            </li>
+            <li>
+              <a href="Pipes.html" class="text-gray-400 hover:text-white">Imp Steel Pipes and Rods</a>
+            </li>
+            <li>
+              <a href="CurtainAccessory.html" class="text-gray-400 hover:text-white">Imp Curtain Accessory</a>
+            </li>
+            <li>
+              <a href="TieBack.html" class="text-gray-400 hover:text-white">Imp Tie Backs</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center text-gray-400">
+              <i class="ri-map-pin-line mr-3"></i>
+              <span>1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan,
+                Chincholi Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
+                India.</span>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="ri-phone-line mr-3"></i>
+              <span>+91 98213 39373</span>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="ri-time-line mr-3"></i>
+              <span>Mon - Sat: 10:30 AM - 8:30 PM</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+      <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="flex flex-wrap justify-between items-center">
+          <p class="text-gray-400">
+            &copy; 2025 Kohinoor All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Floating contact buttons -->
-    <a
-      href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Curtain%20Accessories%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
-      class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
-      target="_blank"
-    >
-      <i class="ri-whatsapp-line"></i>
-    </a>
+  <!-- Floating contact buttons -->
+  <a href="https://wa.me/919821339373?text=Hi,%20I'm%20interested%20in%20Curtain%20Accessories%20and%20would%20love%20to%20know%20more%20details.%20Please%20share%20more%20info.%20Thanks!"
+    class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+    target="_blank">
+    <i class="ri-whatsapp-line"></i>
+  </a>
 
-    <a
-      href="tel:+919821339373"
-      class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
-    >
-      <i class="ri-phone-line"></i>
-    </a>
+  <a href="tel:+919821339373"
+    class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200">
+    <i class="ri-phone-line"></i>
+  </a>
 
-    <script>
-      // Mobile menu functionality
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const menuItems = mobileMenu.querySelectorAll("a");
+  <script>
+    // Mobile menu functionality
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuItems = mobileMenu.querySelectorAll("a");
 
-      hamburger.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
       });
+    });
 
-      menuItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-        });
-      });
+    // Category filter functionality (basic example)
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(
+        'button[class*="px-4 py-2"]',
+      );
 
-      // Category filter functionality (basic example)
-      document.addEventListener("DOMContentLoaded", function () {
-        const filterButtons = document.querySelectorAll(
-          'button[class*="px-4 py-2"]',
-        );
-
-        filterButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            // Remove active class from all buttons
-            filterButtons.forEach((btn) => {
-              btn.classList.remove("bg-white", "shadow-md");
-              btn.classList.add("hover:bg-white", "hover:shadow-md");
-            });
-
-            // Add active class to clicked button
-            this.classList.add("bg-white", "shadow-md");
-            this.classList.remove("hover:bg-white", "hover:shadow-md");
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          // Remove active class from all buttons
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("bg-white", "shadow-md");
+            btn.classList.add("hover:bg-white", "hover:shadow-md");
           });
+
+          // Add active class to clicked button
+          this.classList.add("bg-white", "shadow-md");
+          this.classList.remove("hover:bg-white", "hover:shadow-md");
         });
       });
-    </script>
-    <script src="contact-modal.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        ContactModal.init();
-      });
-    </script>
-  </body>
+    });
+  </script>
+  <script src="contact-modal.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      ContactModal.init();
+    });
+  </script>
+</body>
+
 </html>
