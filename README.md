@@ -1,2 +1,2 @@
 # kohinoor-clone
-kohinnoor clone 
+Kohinnoor Clone 
